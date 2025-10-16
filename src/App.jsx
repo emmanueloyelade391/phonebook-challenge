@@ -40,7 +40,7 @@ const App = () => {
     return (
         <main className="page" data-testid="page-root">
             <header className="page__header">
-                <h1 className="page__title">Phonebook Challenge</h1>
+                <h1 className="page__title">Personal Contact List</h1>
                 <p className="page__subtitle">Build a simple contact directory</p>
             </header>
 
