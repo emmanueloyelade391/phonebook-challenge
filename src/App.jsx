@@ -45,7 +45,7 @@ const App = () => {
             </header>
 
             <section className="search" aria-labelledby="search-heading">
-                <h2 id="search-heading">Search Contacts</h2>
+                <h2 id="search-heading" className="search-heading">Search Contacts</h2>
                 <div className="search__controls">
                     <label htmlFor="search-input">Search</label>
                     <input
