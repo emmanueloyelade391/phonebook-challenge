@@ -68,6 +68,87 @@ const App = () => {
 
             <section className="contacts" aria-labelledby="contacts-heading">
                 <h2 id="contacts-heading">Contacts</h2>
+                <div className="contacts-container">
+                    {/*1st contact*/}
+                    <div className="Contact">
+                        <img className="contact-photo" src="photo.png" alt="Photo of contact"></img>
+                        <p>Name: Joe Schmoe</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Email: joe.schmoe@gmail.com</p>
+                    </div>
+
+                    {/*2nd contact*/}
+                    <div className="Contact">
+                        <img className="contact-photo" src="profile.jpg" alt="Photo of contact"></img>
+                        <p>Name: Joe Schmoe</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Email: joe.schmoe@gmail.com</p>
+                    </div>
+
+                    {/*3rd contact*/}
+                    <div className="Contact">
+                        <img className="contact-photo" src="profile.jpg" alt="Photo of contact"></img>
+                        <p>Name: Joe Schmoe</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Email: joe.schmoe@gmail.com</p>
+                    </div>
+                    
+                    {/*4th contact*/}
+                    <div className="Contact">
+                        <img className="contact-photo" src="profile.jpg" alt="Photo of contact"></img>
+                        <p>Name: Joe Schmoe</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Email: joe.schmoe@gmail.com</p>
+                    </div>
+
+                    {/*5th contact*/}
+                    <div className="Contact">
+                        <img className="contact-photo" src="profile.jpg" alt="Photo of contact"></img>
+                        <p>Name: Joe Schmoe</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Email: joe.schmoe@gmail.com</p>
+                    </div>
+                    
+                    {/*6th contact*/}
+                    <div className="Contact">
+                        <img className="contact-photo" src="profile.jpg" alt="Photo of contact"></img>
+                        <p>Name: Joe Schmoe</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Email: joe.schmoe@gmail.com</p>
+                    </div>
+
+                    {/*7th contact*/}
+                    <div className="Contact">
+                        <img className="contact-photo" src="profile.jpg" alt="Photo of contact"></img>
+                        <p>Name: Joe Schmoe</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Email: joe.schmoe@gmail.com</p>
+                    </div>
+
+                    {/*8th contact*/}
+                    <div className="Contact">
+                        <img className="contact-photo" src="profile.jpg" alt="Photo of contact"></img>
+                        <p>Name: Joe Schmoe</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Email: joe.schmoe@gmail.com</p>
+                    </div>
+
+                    {/*9th contact*/}
+                    <div className="Contact">
+                        <img className="contact-photo" src="profile.jpg" alt="Photo of contact"></img>
+                        <p>Name: Joe Schmoe</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Email: joe.schmoe@gmail.com</p>
+                    </div>
+
+                    {/*10th contact*/}
+                    <div className="Contact">
+                        <img className="contact-photo" src="profile.jpg" alt="Photo of contact"></img>
+                        <p>Name: Joe Schmoe</p>
+                        <p>Phone: (123) 456-7890</p>
+                        <p>Email: joe.schmoe@gmail.com</p>
+                    </div>
+                </div>
             </section>
 
             <section className="form" aria-labelledby="form-heading">
