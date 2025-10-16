@@ -18,7 +18,8 @@
 
 .page__subtitle {
     margin: 0;
-    color: #888;
+    color: rgb(51, 50, 50);
+    font-size: 18px;
 }
 
 .toolbar {

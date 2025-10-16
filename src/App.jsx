@@ -41,7 +41,7 @@ const App = () => {
         <main className="page" data-testid="page-root">
             <header className="page__header">
                 <h1 className="page__title">Personal Contact List</h1>
-                <p className="page__subtitle">Build a simple contact directory</p>
+                <p className="page__subtitle">An online storage for all your personal contacts</p>
             </header>
 
             <section className="search" aria-labelledby="search-heading">
