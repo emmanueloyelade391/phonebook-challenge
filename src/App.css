@@ -55,11 +55,20 @@
     font-size: 32px; 
 }
 
+#search-input, #name, #phone, #email, .btn {
+    background-color: white;
+}
+
+/*Increase the size of the search input and its label*/
 .search__controls {
     display: grid;
     grid-template-columns: minmax(140px, 1fr) 1fr minmax(120px, 1fr) 1fr;
     gap: 0.5rem 1rem;
     align-items: center;
+}
+
+.search-input-label {
+    font-size: 25px;
 }
 
 .search__results {
