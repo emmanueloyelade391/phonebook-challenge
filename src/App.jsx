@@ -11,11 +11,14 @@ import man2 from "./man-2.jpg";
 import man3 from "./man-3.jpg";
 import man4 from "./man-4.jpg";
 import man5 from "./man-5.jpg";
+import man6 from "./man-6.jpg";
+import man7 from "./man-7.jpg";
 import woman1 from "./woman-1.jpg";
 import woman2 from "./woman-2.jpg";
 import woman3 from "./woman-3.jpg";
 import woman4 from "./woman-4.jpg";
 import woman5 from "./woman-5.jpg";
+import woman6 from "./woman-6.jpg";
 
 const FALLBACK_CONTACTS = [
     {
@@ -71,6 +74,7 @@ const App = () => {
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
                         data-testid="search-input"
+                        size="23"
                     />
                 </div>
 
@@ -88,20 +92,20 @@ const App = () => {
                     {/*1st contact*/}
                     <div className="contact contact-apple contact-1">
                         <img className="fruit-top" src={apple}></img>
-                        <img className="contact-photo" src={man1} alt="Photo of contact"></img>
-                        <p>Name: Joe Schmoe</p>
-                        <p>Phone: (123) 456-7890</p>
-                        <p>Email: joe.schmoe@gmail.com</p>
+                        <img className="contact-photo" src={man5} alt="Photo of contact"></img>
+                        <p>Name: Zayn Ahmed</p>
+                        <p>Phone: (305) 887-2012</p>
+                        <p>Email: zayn.ahmed@gmail.com</p>
                         <img className="fruit-bottom" src={apple}></img>
                     </div>
 
                     {/*2nd contact*/}
                     <div className="contact contact-orange contact-2">
                         <img className="fruit-top" src={orange}></img>
-                        <img className="contact-photo" src={man2} alt="Photo of contact"></img>
-                        <p>Name: Joe Schmoe</p>
-                        <p>Phone: (123) 456-7890</p>
-                        <p>Email: joe.schmoe@gmail.com</p>
+                        <img className="contact-photo" src={woman1} alt="Photo of contact"></img>
+                        <p>Name: Ava Smith</p>
+                        <p>Phone: (508) 966-7694</p>
+                        <p>Email: ava.smith@gmail.com</p>
                         <img className="fruit-bottom" src={orange}></img>
                     </div>
 
@@ -109,9 +113,9 @@ const App = () => {
                     <div className="contact contact-grape contact-3">
                         <img className="fruit-top" src={grape}></img>
                         <img className="contact-photo" src={man3} alt="Photo of contact"></img>
-                        <p>Name: Joe Schmoe</p>
-                        <p>Phone: (123) 456-7890</p>
-                        <p>Email: joe.schmoe@gmail.com</p>
+                        <p>Name: Noah Davis</p>
+                        <p>Phone: (472) 245-5139</p>
+                        <p>Email: noah.davis@gmail.com</p>
                         <img className="fruit-bottom" src={grape}></img>
                     </div>
                     
@@ -119,49 +123,49 @@ const App = () => {
                     <div className="contact contact-blueberry contact-4">
                         <img className="fruit-top" src={blueberry}></img>
                         <img className="contact-photo" src={man4} alt="Photo of contact"></img>
-                        <p>Name: Joe Schmoe</p>
-                        <p>Phone: (123) 456-7890</p>
-                        <p>Email: joe.schmoe@gmail.com</p>
+                        <p>Name: Henry Anderson</p>
+                        <p>Phone: (630) 674 6725</p>
+                        <p>Email: henry.anderson@gmail.com</p>
                         <img className="fruit-bottom" src={blueberry}></img>
                     </div>
 
                     {/*5th contact*/}
                     <div className="contact contact-peach contact-5">
                         <img className="fruit-top" src={peach}></img>
-                        <img className="contact-photo" src={man5} alt="Photo of contact"></img>
-                        <p>Name: Joe Schmoe</p>
-                        <p>Phone: (123) 456-7890</p>
-                        <p>Email: joe.schmoe@gmail.com</p>
+                        <img className="contact-photo" src={man7} alt="Photo of contact"></img>
+                        <p>Name: Mateo Garcia</p>
+                        <p>Phone: (472) 473-8717</p>
+                        <p>Email: mateo.garcia@gmail.com</p>
                         <img className="fruit-bottom" src={peach}></img>
                     </div>
                     
                     {/*6th contact*/}
                     <div className="contact contact-orange contact-6">
                         <img className="fruit-top" src={orange}></img>
-                        <img className="contact-photo" src={woman1} alt="Photo of contact"></img>
-                        <p>Name: Joe Schmoe</p>
-                        <p>Phone: (123) 456-7890</p>
-                        <p>Email: joe.schmoe@gmail.com</p>
+                        <img className="contact-photo" src={woman6} alt="Photo of contact"></img>
+                        <p>Name: Stacy Moore</p>
+                        <p>Phone: (305) 202-0680</p>
+                        <p>Email: stacy.moore@gmail.com</p>
                         <img className="fruit-bottom" src={orange}></img>
                     </div>
 
                     {/*7th contact*/}
                     <div className="contact contact-apple contact-7">
                         <img className="fruit-top" src={apple}></img>
-                        <img className="contact-photo" src={woman2} alt="Photo of contact"></img>
-                        <p>Name: Joe Schmoe</p>
-                        <p>Phone: (123) 456-7890</p>
-                        <p>Email: joe.schmoe@gmail.com</p>
+                        <img className="contact-photo" src={man2} alt="Photo of contact"></img>
+                        <p>Name: Matthew Young</p>
+                        <p>Phone: (447) 279-8889</p>
+                        <p>Email: matthew.young@gmail.com</p>
                         <img className="fruit-bottom" src={apple}></img>
                     </div>
 
                     {/*8th contact*/}
                     <div className="contact contact-peach contact-8">
                         <img className="fruit-top" src={peach}></img>
-                        <img className="contact-photo" src={woman3} alt="Photo of contact"></img>
-                        <p>Name: Joe Schmoe</p>
-                        <p>Phone: (123) 456-7890</p>
-                        <p>Email: joe.schmoe@gmail.com</p>
+                        <img className="contact-photo" src={woman2} alt="Photo of contact"></img>
+                        <p>Name: Isabella Morgan</p>
+                        <p>Phone: (361) 997-4027</p>
+                        <p>Email: isabella.morgan@gmail.com</p>
                         <img className="fruit-bottom" src={peach}></img>
                     </div>
 
@@ -169,9 +173,9 @@ const App = () => {
                     <div className="contact contact-grape contact-9">
                         <img className="fruit-top" src={grape}></img>
                         <img className="contact-photo" src={woman4} alt="Photo of contact"></img>
-                        <p>Name: Joe Schmoe</p>
-                        <p>Phone: (123) 456-7890</p>
-                        <p>Email: joe.schmoe@gmail.com</p>
+                        <p>Name: Lisa Nguyen</p>
+                        <p>Phone: (458) 607-1315</p>
+                        <p>Email: lisa.nguyen@gmail.com</p>
                         <img className="fruit-bottom" src={grape}></img>
                     </div>
 
@@ -179,9 +183,9 @@ const App = () => {
                     <div className="contact contact-blueberry contact-10">
                         <img className="fruit-top" src={blueberry}></img>
                         <img className="contact-photo" src={woman5} alt="Photo of contact"></img>
-                        <p>Name: Joe Schmoe</p>
-                        <p>Phone: (123) 456-7890</p>
-                        <p>Email: joe.schmoe@gmail.com</p>
+                        <p>Name: Amanda White</p>
+                        <p>Phone: (505) 582-4018</p>
+                        <p>Email: amanda.white@gmail.com</p>
                         <img className="fruit-bottom" src={blueberry}></img>
                     </div>
                 </div>
@@ -199,6 +203,7 @@ const App = () => {
                             onChange={(e) => setForm({ ...form, name: e.target.value })}
                             required
                             minLength={2}
+                            placeholder="e.g. Joe Schmo"
                         />
                     </div>
                     <div className="field">
@@ -215,22 +220,25 @@ const App = () => {
                             required
                         />
                     </div>
-                    <div className="field">
-                        <label htmlFor="email">Email</label>
-                        <input
-                            id="email"
-                            name="email"
-                            type="email"
-                            value={form.email}
-                            onChange={(e) =>
-                                setForm({ ...form, email: e.target.value })
-                            }
-                        />
-                    </div>
-                    <div className="form__actions">
-                        <button className="btn" type="submit" data-testid="btn-add">
-                            Add Contact
-                        </button>
+                    <div className="email-wrapper">
+                        <div className="field">
+                            <label htmlFor="email">Email</label>
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                value={form.email}
+                                onChange={(e) =>
+                                    setForm({ ...form, email: e.target.value })
+                                }
+                                placeholder="jschmo@gmail.com"
+                            />
+                        </div>
+                        <div className="form__actions">
+                            <button className="btn" type="submit" data-testid="btn-add">
+                                Add Contact
+                            </button>
+                        </div>
                     </div>
                 </form>
             </section>

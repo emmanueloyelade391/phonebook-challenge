@@ -45,6 +45,9 @@ body {
     color: var(--fg);
     background: var(--bg);
     background-image: url("fruits-pattern.jpg");
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 a {

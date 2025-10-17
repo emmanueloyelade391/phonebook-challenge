@@ -1,8 +1,10 @@
 .page {
-    max-width: 1100px;
+    max-width: 1500px;
     margin: 0 auto;
     margin-top: 20px;
     padding: 2rem 1rem 4rem;
+    padding-left: 100px;
+    padding-right: 50px;
     background-color: white;
     border-radius: 12px; 
     box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.7); 
@@ -69,14 +71,21 @@
     grid-template-columns: minmax(140px, 1fr) 1fr minmax(120px, 1fr) 1fr;
     gap: 0.5rem 1rem;
     align-items: center;
+    font-size: 25px;
 }
-
+/*
 .search-input-label {
     font-size: 25px;
+}
+*/
+
+#search-input {
+    font-size: 20px;
 }
 
 .search__results {
     color: #888;
+    font-size: 20px; 
 }
 
 .contacts {
@@ -86,7 +95,7 @@
 .contacts-container {
     font-size: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 400px 400px 400px; 
     gap: 60px;
 }
 
@@ -108,7 +117,8 @@
 }
 
 .contact-photo {
-    width: 60%;
+    width: 300px;
+    height: 300px;
     display: block;
     margin: 0 auto;
     object-fit: cover;
@@ -269,15 +279,19 @@
 }
 
 .form__body {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     gap: 0.75rem 1rem;
-    grid-template-columns: 1fr 1fr 160px auto;
-    align-items: end;
 }
 
 .field {
     display: grid;
     gap: 0.25rem;
+    font-size: 25px;
+}
+
+#name, #phone, #email {
+    font-size: 20px;
 }
 
 input,
@@ -300,11 +314,64 @@ select {
     text-align: center;
 }
 
+.field {
+    width: 200px; 
+}
+
+
+.email-wrapper {
+    display: flex;
+    width: 300px;
+    position: relative;
+}
+
+
+.email-wrapper #email {
+    width: 100%;
+}
+/*
+.email-wrapper .btn {
+    position: absolute;
+    bottom: 0; 
+    height: 45px;
+    font-size: 12px;
+    font-weight: bold;
+}
+*/
+
+.email-wrapper .btn {
+    width: 100px;
+    height: 45px;
+    font-size: 13px;
+    font-weight: bold; 
+    margin-top: 37px;
+    color: white;
+    background-color: rgb(46, 164, 79); 
+    border: none;
+    transition: background-color 0.17s;
+}
+
+.email-wrapper .btn:hover {
+    background-color: rgb(27, 200, 76);
+}
+
 @media (max-width: 720px) {
     .form__body {
         grid-template-columns: 1fr;
     }
     .search__controls {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 1525px) {
+    .contacts-container {
+        grid-template-columns: 400px 400px;
+    }
+}
+
+@media(max-width: 1100px) {
+    .contacts-container {
+        grid-template-columns: 400px;
     }
 }
