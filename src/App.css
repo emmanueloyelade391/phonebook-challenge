@@ -1,7 +1,11 @@
 .page {
     max-width: 1100px;
     margin: 0 auto;
+    margin-top: 20px;
     padding: 2rem 1rem 4rem;
+    background-color: white;
+    border-radius: 12px; 
+    box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.7); 
 }
 
 .page__header {
@@ -51,7 +55,7 @@
     border-top: 1px solid #333;
 }
 
-#search-heading {
+#search-heading, #contacts-heading, #form-heading {
     font-size: 32px; 
 }
 
@@ -104,9 +108,10 @@
 }
 
 .contact-photo {
-    width: 40%;
+    width: 60%;
     display: block;
     margin: 0 auto;
+    object-fit: cover;
 }
 
 .fruit-top {

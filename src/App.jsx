@@ -6,6 +6,16 @@ import orange from "./orange.png";
 import grape from "./grape.png";
 import peach from "./peach.png";
 import blueberry from "./blueberry.png";
+import man1 from "./man-1.jpg";
+import man2 from "./man-2.jpg";
+import man3 from "./man-3.jpg";
+import man4 from "./man-4.jpg";
+import man5 from "./man-5.jpg";
+import woman1 from "./woman-1.jpg";
+import woman2 from "./woman-2.jpg";
+import woman3 from "./woman-3.jpg";
+import woman4 from "./woman-4.jpg";
+import woman5 from "./woman-5.jpg";
 
 const FALLBACK_CONTACTS = [
     {
@@ -78,7 +88,7 @@ const App = () => {
                     {/*1st contact*/}
                     <div className="contact contact-apple contact-1">
                         <img className="fruit-top" src={apple}></img>
-                        <img className="contact-photo" src={profile} alt="Photo of contact"></img>
+                        <img className="contact-photo" src={man1} alt="Photo of contact"></img>
                         <p>Name: Joe Schmoe</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Email: joe.schmoe@gmail.com</p>
@@ -88,7 +98,7 @@ const App = () => {
                     {/*2nd contact*/}
                     <div className="contact contact-orange contact-2">
                         <img className="fruit-top" src={orange}></img>
-                        <img className="contact-photo" src={profile} alt="Photo of contact"></img>
+                        <img className="contact-photo" src={man2} alt="Photo of contact"></img>
                         <p>Name: Joe Schmoe</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Email: joe.schmoe@gmail.com</p>
@@ -98,7 +108,7 @@ const App = () => {
                     {/*3rd contact*/}
                     <div className="contact contact-grape contact-3">
                         <img className="fruit-top" src={grape}></img>
-                        <img className="contact-photo" src={profile} alt="Photo of contact"></img>
+                        <img className="contact-photo" src={man3} alt="Photo of contact"></img>
                         <p>Name: Joe Schmoe</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Email: joe.schmoe@gmail.com</p>
@@ -108,7 +118,7 @@ const App = () => {
                     {/*4th contact*/}
                     <div className="contact contact-blueberry contact-4">
                         <img className="fruit-top" src={blueberry}></img>
-                        <img className="contact-photo" src={profile} alt="Photo of contact"></img>
+                        <img className="contact-photo" src={man4} alt="Photo of contact"></img>
                         <p>Name: Joe Schmoe</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Email: joe.schmoe@gmail.com</p>
@@ -118,7 +128,7 @@ const App = () => {
                     {/*5th contact*/}
                     <div className="contact contact-peach contact-5">
                         <img className="fruit-top" src={peach}></img>
-                        <img className="contact-photo" src={profile} alt="Photo of contact"></img>
+                        <img className="contact-photo" src={man5} alt="Photo of contact"></img>
                         <p>Name: Joe Schmoe</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Email: joe.schmoe@gmail.com</p>
@@ -128,7 +138,7 @@ const App = () => {
                     {/*6th contact*/}
                     <div className="contact contact-orange contact-6">
                         <img className="fruit-top" src={orange}></img>
-                        <img className="contact-photo" src={profile} alt="Photo of contact"></img>
+                        <img className="contact-photo" src={woman1} alt="Photo of contact"></img>
                         <p>Name: Joe Schmoe</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Email: joe.schmoe@gmail.com</p>
@@ -138,7 +148,7 @@ const App = () => {
                     {/*7th contact*/}
                     <div className="contact contact-apple contact-7">
                         <img className="fruit-top" src={apple}></img>
-                        <img className="contact-photo" src={profile} alt="Photo of contact"></img>
+                        <img className="contact-photo" src={woman2} alt="Photo of contact"></img>
                         <p>Name: Joe Schmoe</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Email: joe.schmoe@gmail.com</p>
@@ -148,7 +158,7 @@ const App = () => {
                     {/*8th contact*/}
                     <div className="contact contact-peach contact-8">
                         <img className="fruit-top" src={peach}></img>
-                        <img className="contact-photo" src={profile} alt="Photo of contact"></img>
+                        <img className="contact-photo" src={woman3} alt="Photo of contact"></img>
                         <p>Name: Joe Schmoe</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Email: joe.schmoe@gmail.com</p>
@@ -158,7 +168,7 @@ const App = () => {
                     {/*9th contact*/}
                     <div className="contact contact-grape contact-9">
                         <img className="fruit-top" src={grape}></img>
-                        <img className="contact-photo" src={profile} alt="Photo of contact"></img>
+                        <img className="contact-photo" src={woman4} alt="Photo of contact"></img>
                         <p>Name: Joe Schmoe</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Email: joe.schmoe@gmail.com</p>
@@ -168,7 +178,7 @@ const App = () => {
                     {/*10th contact*/}
                     <div className="contact contact-blueberry contact-10">
                         <img className="fruit-top" src={blueberry}></img>
-                        <img className="contact-photo" src={profile} alt="Photo of contact"></img>
+                        <img className="contact-photo" src={woman5} alt="Photo of contact"></img>
                         <p>Name: Joe Schmoe</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Email: joe.schmoe@gmail.com</p>
