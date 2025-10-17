@@ -58,11 +58,14 @@ const App = () => {
 
     return (
         <main className="page" data-testid="page-root">
+            {/*This section contains the title and main subtitle of this entire website*/}
             <header className="page__header">
                 <h1 className="page__title">Personal Contact List</h1>
                 <p className="page__subtitle">An online storage for all your personal contacts</p>
             </header>
 
+            {/*This section lets users search for specific contacts by inputting names or numbers 
+            in the search box. At the moment it is not functional*/}
             <section className="search" aria-labelledby="search-heading">
                 <h2 id="search-heading" className="search-heading">Search Contacts</h2>
                 <div className="search__controls">
@@ -78,6 +81,7 @@ const App = () => {
                     />
                 </div>
 
+                {/*Shows how many contacts were found that match the user's inputted name or number*/}
                 <p className="search__results" data-testid="results-count">
                     Showing {contacts.length}{" "}
                     {contacts.length === 1 ? "result" : "results"}
@@ -86,6 +90,8 @@ const App = () => {
                 </p>
             </section>
 
+            {/*This section contains all contact cards in order (each row has 3 cards).
+            Each contact card has a unique name, email, phone number, and photo*/}
             <section className="contacts" aria-labelledby="contacts-heading">
                 <h2 id="contacts-heading">Contacts</h2>
                 <div className="contacts-container">
@@ -191,9 +197,12 @@ const App = () => {
                 </div>
             </section>
 
+            {/*This section allows the user to add new contacts by adding a new name, phone number, and email address. 
+            It is not functional at the moment, however it is responsive to different page size*/}
             <section className="form" aria-labelledby="form-heading">
                 <h2 id="form-heading">Add a New Contact</h2>
                 <form className="form__body" onSubmit={handleSubmit} noValidate>
+                    {/*Lets the user add the name of the new contact.*/}
                     <div className="field">
                         <label htmlFor="name">Name</label>
                         <input
@@ -206,6 +215,7 @@ const App = () => {
                             placeholder="e.g. Joe Schmo"
                         />
                     </div>
+                    {/*Lets the user add the phone number of the new contact.*/}
                     <div className="field">
                         <label htmlFor="phone">Phone</label>
                         <input
@@ -220,6 +230,8 @@ const App = () => {
                             required
                         />
                     </div>
+                    {/*Lets the user add the email of the new contact. The user must push the "Add contact" button next to the 
+                    email input to create the new contact with the information they have added.*/}
                     <div className="email-wrapper">
                         <div className="field">
                             <label htmlFor="email">Email</label>
@@ -243,6 +255,7 @@ const App = () => {
                 </form>
             </section>
 
+            {/*This footer came with the scaffolding of this project*/}
             <footer className="page__footer">
                 <small>
                     Starter provided. Complete tasks per README and make this page
