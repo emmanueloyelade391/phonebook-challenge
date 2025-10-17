@@ -1,5 +1,11 @@
 import { useEffect, useMemo, useState } from "react";
 import "./App.css";
+import profile from "./profile.png";
+import apple from "./apple.png";
+import orange from "./orange.png";
+import grape from "./grape.png";
+import peach from "./peach.png";
+import blueberry from "./blueberry.png";
 
 const FALLBACK_CONTACTS = [
     {
@@ -70,83 +76,103 @@ const App = () => {
                 <h2 id="contacts-heading">Contacts</h2>
                 <div className="contacts-container">
                     {/*1st contact*/}
-                    <div className="Contact">
-                        <img className="contact-photo" src="photo.png" alt="Photo of contact"></img>
+                    <div className="contact contact-apple contact-1">
+                        <img className="fruit-top" src={apple}></img>
+                        <img className="contact-photo" src={profile} alt="Photo of contact"></img>
                         <p>Name: Joe Schmoe</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Email: joe.schmoe@gmail.com</p>
+                        <img className="fruit-bottom" src={apple}></img>
                     </div>
 
                     {/*2nd contact*/}
-                    <div className="Contact">
-                        <img className="contact-photo" src="profile.jpg" alt="Photo of contact"></img>
+                    <div className="contact contact-orange contact-2">
+                        <img className="fruit-top" src={orange}></img>
+                        <img className="contact-photo" src={profile} alt="Photo of contact"></img>
                         <p>Name: Joe Schmoe</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Email: joe.schmoe@gmail.com</p>
+                        <img className="fruit-bottom" src={orange}></img>
                     </div>
 
                     {/*3rd contact*/}
-                    <div className="Contact">
-                        <img className="contact-photo" src="profile.jpg" alt="Photo of contact"></img>
+                    <div className="contact contact-grape contact-3">
+                        <img className="fruit-top" src={grape}></img>
+                        <img className="contact-photo" src={profile} alt="Photo of contact"></img>
                         <p>Name: Joe Schmoe</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Email: joe.schmoe@gmail.com</p>
+                        <img className="fruit-bottom" src={grape}></img>
                     </div>
                     
                     {/*4th contact*/}
-                    <div className="Contact">
-                        <img className="contact-photo" src="profile.jpg" alt="Photo of contact"></img>
+                    <div className="contact contact-blueberry contact-4">
+                        <img className="fruit-top" src={blueberry}></img>
+                        <img className="contact-photo" src={profile} alt="Photo of contact"></img>
                         <p>Name: Joe Schmoe</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Email: joe.schmoe@gmail.com</p>
+                        <img className="fruit-bottom" src={blueberry}></img>
                     </div>
 
                     {/*5th contact*/}
-                    <div className="Contact">
-                        <img className="contact-photo" src="profile.jpg" alt="Photo of contact"></img>
+                    <div className="contact contact-peach contact-5">
+                        <img className="fruit-top" src={peach}></img>
+                        <img className="contact-photo" src={profile} alt="Photo of contact"></img>
                         <p>Name: Joe Schmoe</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Email: joe.schmoe@gmail.com</p>
+                        <img className="fruit-bottom" src={peach}></img>
                     </div>
                     
                     {/*6th contact*/}
-                    <div className="Contact">
-                        <img className="contact-photo" src="profile.jpg" alt="Photo of contact"></img>
+                    <div className="contact contact-orange contact-6">
+                        <img className="fruit-top" src={orange}></img>
+                        <img className="contact-photo" src={profile} alt="Photo of contact"></img>
                         <p>Name: Joe Schmoe</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Email: joe.schmoe@gmail.com</p>
+                        <img className="fruit-bottom" src={orange}></img>
                     </div>
 
                     {/*7th contact*/}
-                    <div className="Contact">
-                        <img className="contact-photo" src="profile.jpg" alt="Photo of contact"></img>
+                    <div className="contact contact-apple contact-7">
+                        <img className="fruit-top" src={apple}></img>
+                        <img className="contact-photo" src={profile} alt="Photo of contact"></img>
                         <p>Name: Joe Schmoe</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Email: joe.schmoe@gmail.com</p>
+                        <img className="fruit-bottom" src={apple}></img>
                     </div>
 
                     {/*8th contact*/}
-                    <div className="Contact">
-                        <img className="contact-photo" src="profile.jpg" alt="Photo of contact"></img>
+                    <div className="contact contact-peach contact-8">
+                        <img className="fruit-top" src={peach}></img>
+                        <img className="contact-photo" src={profile} alt="Photo of contact"></img>
                         <p>Name: Joe Schmoe</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Email: joe.schmoe@gmail.com</p>
+                        <img className="fruit-bottom" src={peach}></img>
                     </div>
 
                     {/*9th contact*/}
-                    <div className="Contact">
-                        <img className="contact-photo" src="profile.jpg" alt="Photo of contact"></img>
+                    <div className="contact contact-grape contact-9">
+                        <img className="fruit-top" src={grape}></img>
+                        <img className="contact-photo" src={profile} alt="Photo of contact"></img>
                         <p>Name: Joe Schmoe</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Email: joe.schmoe@gmail.com</p>
+                        <img className="fruit-bottom" src={grape}></img>
                     </div>
 
                     {/*10th contact*/}
-                    <div className="Contact">
-                        <img className="contact-photo" src="profile.jpg" alt="Photo of contact"></img>
+                    <div className="contact contact-blueberry contact-10">
+                        <img className="fruit-top" src={blueberry}></img>
+                        <img className="contact-photo" src={profile} alt="Photo of contact"></img>
                         <p>Name: Joe Schmoe</p>
                         <p>Phone: (123) 456-7890</p>
                         <p>Email: joe.schmoe@gmail.com</p>
+                        <img className="fruit-bottom" src={blueberry}></img>
                     </div>
                 </div>
             </section>

@@ -83,7 +83,7 @@
     font-size: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
-    gap: 25px;
+    gap: 60px;
 }
 
 .contacts__grid {
@@ -93,6 +93,150 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 1rem;
+}
+
+.contact {
+    
+    border-radius: 10px; 
+    padding: 5px;
+    box-shadow: 1px 10px 8px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+}
+
+.contact-photo {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+.fruit-top {
+    width: 50px; 
+}
+
+.fruit-bottom {
+    width: 50px;
+    margin-left: auto;
+    display: block;
+} 
+
+.contact-apple {
+    background-color: rgb(255, 147, 147);
+}
+
+.contact-orange {
+    background-color: rgb(255, 197, 89);
+}
+
+.contact-grape {
+    background-color: rgb(255, 116, 255);
+}
+
+.contact-blueberry {
+    background-color: rgb(169, 169, 250);
+}
+
+.contact-peach {
+    background-color: rgb(255, 201, 201);
+}
+
+.contact-1 {
+    transition: background-color 0.2s; 
+    transition: box-shadow 0.2s; 
+}
+
+.contact-1:hover {
+    background-color: rgba(255, 4, 4, 0.6); 
+    box-shadow: 1px 14px 10px rgba(0, 0, 0, 1);
+}
+
+.contact-2 {
+    transition: background-color 0.2s; 
+    transition: box-shadow 0.2s; 
+}
+
+.contact-2:hover {
+    background-color: rgba(255, 166, 0, 0.8); 
+    box-shadow: 1px 14px 10px rgba(0, 0, 0, 1);
+}
+
+.contact-3 {
+    transition: background-color 0.2s; 
+    transition: box-shadow 0.2s; 
+}
+
+.contact-3:hover {
+    background-color: rgba(255, 0, 255, 0.7); 
+    box-shadow: 1px 14px 10px rgba(0, 0, 0, 1);
+}
+
+.contact-4 {
+    transition: background-color 0.2s; 
+    transition: box-shadow 0.2s; 
+}
+
+.contact-4:hover {
+    background-color: rgba(12, 12, 255, 0.5); 
+    box-shadow: 1px 14px 10px rgba(0, 0, 0, 1);
+}
+
+.contact-5 {
+    transition: background-color 0.2s; 
+    transition: box-shadow 0.2s; 
+}
+
+.contact-5:hover {
+    background-color: rgba(255, 156, 173, 0.796); 
+    box-shadow: 1px 14px 10px rgba(0, 0, 0, 1);
+}
+
+.contact-6 {
+    transition: background-color 0.2s; 
+    transition: box-shadow 0.2s; 
+}
+
+.contact-6:hover {
+    background-color: rgba(255, 166, 0, 0.8); 
+    box-shadow: 1px 14px 10px rgba(0, 0, 0, 1);
+}
+
+.contact-7 {
+    transition: background-color 0.2s; 
+    transition: box-shadow 0.2s; 
+}
+
+.contact-7:hover {
+    background-color: rgba(255, 4, 4, 0.6); 
+    box-shadow: 1px 14px 10px rgba(0, 0, 0, 1);
+}
+
+.contact-8 {
+    transition: background-color 0.2s; 
+    transition: box-shadow 0.2s; 
+}
+
+.contact-8:hover {
+    background-color: rgba(255, 156, 173, 0.796); 
+    box-shadow: 1px 14px 10px rgba(0, 0, 0, 1);
+}
+
+.contact-9 {
+    transition: background-color 0.2s; 
+    transition: box-shadow 0.2s; 
+}
+
+.contact-9:hover {
+    background-color: rgba(255, 0, 255, 0.7); 
+    box-shadow: 1px 14px 10px rgba(0, 0, 0, 1);
+}
+
+.contact-10 {
+    transition: background-color 0.2s; 
+    transition: box-shadow 0.2s; 
+}
+
+.contact-10:hover {
+    background-color: rgba(12, 12, 255, 0.5); 
+    box-shadow: 1px 14px 10px rgba(0, 0, 0, 1);
 }
 
 .contact-card {
