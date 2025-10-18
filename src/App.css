@@ -109,11 +109,14 @@
 }
 
 .contact {
-    
     border-radius: 10px; 
     padding: 5px;
     box-shadow: 1px 10px 8px rgba(0, 0, 0, 0.6);
     font-weight: bold;
+}
+
+.underlined-text {
+    text-decoration: underline;
 }
 
 .contact-photo {
