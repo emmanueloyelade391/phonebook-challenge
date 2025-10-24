@@ -4,7 +4,7 @@
     margin: 0 auto;
     margin-top: 20px;
     padding: 2rem 1rem 4rem;
-    padding-left: 90px;
+    padding-left: 87px;
     padding-right: 50px;
     background-color: white;
     border-radius: 12px; 
@@ -98,6 +98,7 @@
     display: grid;
     grid-template-columns: 350px 350px 350px; 
     gap: 60px;
+    margin: 0 auto;
 }
 
 .contacts__grid {
