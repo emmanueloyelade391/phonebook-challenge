@@ -361,15 +361,6 @@ select {
     background-color: rgb(27, 200, 76);
 }
 
-@media (max-width: 720px) {
-    .form__body {
-        grid-template-columns: 1fr;
-    }
-    .search__controls {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 @media(max-width: 1525px) {
     .contacts-container {
         grid-template-columns: 400px 400px;
@@ -380,9 +371,7 @@ select {
     .contacts-container {
         grid-template-columns: 400px;
     }
-}
 
-@media(max-width: 1100px) {
     .form__body {
         display: block;
     }
