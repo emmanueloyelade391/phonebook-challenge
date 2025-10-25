@@ -1,10 +1,9 @@
 .page {
-    max-width: 1350px;
-    min-width: 527px;
+    max-width: 1500px;
     margin: 0 auto;
     margin-top: 20px;
     padding: 2rem 1rem 4rem;
-    padding-left: 87px;
+    padding-left: 100px;
     padding-right: 50px;
     background-color: white;
     border-radius: 12px; 
@@ -96,9 +95,8 @@
 .contacts-container {
     font-size: 20px;
     display: grid;
-    grid-template-columns: 350px 350px 350px; 
+    grid-template-columns: 400px 400px 400px; 
     gap: 60px;
-    margin: 0 auto;
 }
 
 .contacts__grid {
@@ -122,8 +120,8 @@
 }
 
 .contact-photo {
-    width: 275px;
-    height: 275px;
+    width: 300px;
+    height: 300px;
     display: block;
     margin: 0 auto;
     object-fit: cover;
@@ -380,7 +378,9 @@ select {
     .contacts-container {
         grid-template-columns: 400px;
     }
+}
 
+@media(max-width: 1100px) {
     .form__body {
         display: block;
     }
