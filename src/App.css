@@ -361,7 +361,7 @@ select {
     background-color: rgb(27, 200, 76);
 }
 
-@media(max-width: 1525px) {
+@media(max-width: 1400px) {
     .contacts-container {
         grid-template-columns: 400px 400px;
     }
