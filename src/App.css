@@ -45,6 +45,15 @@
     cursor: pointer;
 }
 
+.input-element {
+    border-width: 3px;
+}
+
+.input-element:focus { 
+    outline: none;
+    border-color: rgb(84, 84, 255);
+}
+
 .theme {
     display: inline-flex;
     gap: 0.5rem;
@@ -347,7 +356,7 @@ select {
 
 .email-wrapper .btn {
     width: 100px;
-    height: 45px;
+    height: 48px;
     font-size: 13px;
     font-weight: bold; 
     margin-top: 37px;

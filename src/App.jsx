@@ -71,6 +71,7 @@ const App = () => {
                 <div className="search__controls">
                     <label htmlFor="search-input" className="search-input-label">Search</label>
                     <input
+                        className="input-element"
                         id="search-input"
                         type="search"
                         placeholder="Search by name or phone"
@@ -206,6 +207,7 @@ const App = () => {
                     <div className="field">
                         <label htmlFor="name">Name</label>
                         <input
+                            className="input-element"
                             id="name"
                             name="name"
                             value={form.name}
@@ -219,6 +221,7 @@ const App = () => {
                     <div className="field">
                         <label htmlFor="phone">Phone</label>
                         <input
+                            className="input-element"
                             id="phone"
                             name="phone"
                             inputMode="tel"
@@ -236,6 +239,7 @@ const App = () => {
                         <div className="field">
                             <label htmlFor="email">Email</label>
                             <input
+                                className="input-element"
                                 id="email"
                                 name="email"
                                 type="email"
