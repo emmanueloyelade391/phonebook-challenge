@@ -23,21 +23,30 @@ import woman6 from "./woman-6.jpg";
 const FALLBACK_CONTACTS = [
     {
         id: 1,
-        name: "Ada Lovelace",
-        phone: "(555) 010-0101",
-        email: "ada@example.com",
+        name: "Zayn Ahmed",
+        phone: "(305) 887-2012",
+        email: "zayn.ahmed@gmail.com",
+        fruit: apple,
+        photo: man5,
+        contactName: "contact-1"
     },
     {
         id: 2,
-        name: "Alan Turing",
-        phone: "(555) 010-0102",
-        email: "alan@example.com",
+        name: "Ava Smith",
+        phone: "(508) 966-7694",
+        email: "ava.smith@gmail.com",
+        fruit: orange,
+        photo: woman1,
+        contactName: "contact-2"
     },
     {
         id: 3,
-        name: "Grace Hopper",
-        phone: "(555) 010-0103",
-        email: "grace@example.com",
+        name: "Noah Davis",
+        phone: "(472) 245-5139",
+        email: "noah.davis@gmail.com",
+        fruit: grape,
+        photo: man3,
+        contactName: "contact-3"
     },
 ];
 
@@ -96,35 +105,20 @@ const App = () => {
             <section className="contacts" aria-labelledby="contacts-heading">
                 <h2 id="contacts-heading">Contacts</h2>
                 <div className="contacts-container">
-                    {/*1st contact*/}
-                    <div className="contact contact-apple contact-1">
-                        <img className="fruit-top" src={apple}></img>
-                        <img className="contact-photo" src={man5} alt="Image of a brown-skinned man with gold colored eyes and a curly mustache"></img>
-                        <p><span className="underlined-text">Name</span>: Zayn Ahmed</p>
-                        <p><span className="underlined-text">Phone</span>: (305) 887-2012</p>
-                        <p><span className="underlined-text">Email</span>: zayn.ahmed@gmail.com</p>
-                        <img className="fruit-bottom" src={apple}></img>
-                    </div>
+                    {FALLBACK_CONTACTS.map((contact) => {
+                        return (
+                            <div className="contact contact-apple contact-1">
+                                <img className="fruit-top" src={contact.fruit}></img>
+                                <img className="contact-photo" src={contact.photo} alt="Image of a brown-skinned man with gold colored eyes and a curly mustache"></img>
+                                <p><span className="underlined-text">Name</span>: {contact.name}</p>
+                                <p><span className="underlined-text">Phone</span>: {contact.phone}</p>
+                                <p><span className="underlined-text">Email</span>: {contact.email}</p>
+                                <img className="fruit-bottom" src={contact.fruit}></img>
+                            </div>
+                        )
+                    })}
 
-                    {/*2nd contact*/}
-                    <div className="contact contact-orange contact-2">
-                        <img className="fruit-top" src={orange}></img>
-                        <img className="contact-photo" src={woman1} alt="Image of an African-American woman with calm eyes"></img>
-                        <p><span className="underlined-text">Name</span>: Ava Smith</p>
-                        <p><span className="underlined-text">Phone</span>: (508) 966-7694</p>
-                        <p><span className="underlined-text">Email</span>: ava.smith@gmail.com</p>
-                        <img className="fruit-bottom" src={orange}></img>
-                    </div>
-
-                    {/*3rd contact*/}
-                    <div className="contact contact-grape contact-3">
-                        <img className="fruit-top" src={grape}></img>
-                        <img className="contact-photo" src={man3} alt="Image of a brown-skinned with a wide smile"></img>
-                        <p><span className="underlined-text">Name</span>: Noah Davis</p>
-                        <p><span className="underlined-text">Phone</span>: (472) 245-5139</p>
-                        <p><span className="underlined-text">Email</span>: noah.davis@gmail.com</p>
-                        <img className="fruit-bottom" src={grape}></img>
-                    </div>
+                    
                     
                     {/*4th contact*/}
                     <div className="contact contact-blueberry contact-4">
