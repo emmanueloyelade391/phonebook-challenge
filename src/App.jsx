@@ -1,24 +1,25 @@
 import { useEffect, useMemo, useState } from "react";
 import "./App.css";
-import profile from "./profile.png";
-import apple from "./apple.png";
-import orange from "./orange.png";
-import grape from "./grape.png";
-import peach from "./peach.png";
-import blueberry from "./blueberry.png";
-import man1 from "./man-1.jpg";
-import man2 from "./man-2.jpg";
-import man3 from "./man-3.jpg";
-import man4 from "./man-4.jpg";
-import man5 from "./man-5.jpg";
-import man6 from "./man-6.jpg";
-import man7 from "./man-7.jpg";
-import woman1 from "./woman-1.jpg";
-import woman2 from "./woman-2.jpg";
-import woman3 from "./woman-3.jpg";
-import woman4 from "./woman-4.jpg";
-import woman5 from "./woman-5.jpg";
-import woman6 from "./woman-6.jpg";
+import profile from "./images/profile.png";
+import apple from "./images/apple.png";
+import orange from "./images/orange.png";
+import grape from "./images/grape.png";
+import peach from "./images/peach.png";
+import blueberry from "./images/blueberry.png";
+import man1 from "./images/man-1.jpg";
+import man2 from "./images/man-2.jpg";
+import man3 from "./images/man-3.jpg";
+import man4 from "./images/man-4.jpg";
+import man5 from "./images/man-5.jpg";
+import man6 from "./images/man-6.jpg";
+import man7 from "./images/man-7.jpg";
+import woman1 from "./images/woman-1.jpg";
+import woman2 from "./images/woman-2.jpg";
+import woman3 from "./images/woman-3.jpg";
+import woman4 from "./images/woman-4.jpg";
+import woman5 from "./images/woman-5.jpg";
+import woman6 from "./images/woman-6.jpg";
+import Contact from "./components/Contact/Contact";
 
 const FALLBACK_CONTACTS = [
     {
@@ -104,9 +105,18 @@ const App = () => {
             Each contact card has a unique name, email, phone number, and photo*/}
             <section className="contacts" aria-labelledby="contacts-heading">
                 <h2 id="contacts-heading">Contacts</h2>
-                <div className="contacts-container">
+                <div className={"contacts-container"}>
                     {FALLBACK_CONTACTS.map((contact) => {
                         return (
+                            <Contact 
+                                name={contact.name}
+                                phone={contact.phone} 
+                                email={contact.email}
+                                fruit={contact.fruit}
+                                photo={contact.photo}
+                            />
+                            
+                            /*
                             <div className="contact contact-apple contact-1">
                                 <img className="fruit-top" src={contact.fruit}></img>
                                 <img className="contact-photo" src={contact.photo} alt="Image of a brown-skinned man with gold colored eyes and a curly mustache"></img>
@@ -114,7 +124,7 @@ const App = () => {
                                 <p><span className="underlined-text">Phone</span>: {contact.phone}</p>
                                 <p><span className="underlined-text">Email</span>: {contact.email}</p>
                                 <img className="fruit-bottom" src={contact.fruit}></img>
-                            </div>
+                            </div>*/
                         )
                     })}
 
