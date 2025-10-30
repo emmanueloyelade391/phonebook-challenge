@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import "./page1.css";
+import "../App.css";
 import profile from "../images/profile.png";
 import apple from "../images/apple.png";
 import orange from "../images/orange.png";
