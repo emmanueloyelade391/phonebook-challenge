@@ -20,7 +20,7 @@ import woman4 from "./images/woman-4.jpg";
 import woman5 from "./images/woman-5.jpg";
 import woman6 from "./images/woman-6.jpg";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Page1 from "./pages/page1";
+import Page1 from "./pages/Page1";
 import Navbar from "./Navbar";
 
 const FALLBACK_CONTACTS = [
@@ -147,7 +147,7 @@ const App = () => {
                 <Navbar />
                 <div className="page-links">
                     <Routes>
-                        <Route path="/page1" element={<Page1 />}></Route>
+                        <Route path="/Page1" element={<Page1 />}></Route>
                     </Routes>
                 </div>
             </Router>
