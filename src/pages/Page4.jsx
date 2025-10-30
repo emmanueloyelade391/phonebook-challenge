@@ -1,24 +1,24 @@
 import { useEffect, useMemo, useState } from "react";
-import "./App.css";
-import profile from "./images/profile.png";
-import apple from "./images/apple.png";
-import orange from "./images/orange.png";
-import grape from "./images/grape.png";
-import peach from "./images/peach.png";
-import blueberry from "./images/blueberry.png";
-import man1 from "./images/man-1.jpg";
-import man2 from "./images/man-2.jpg";
-import man3 from "./images/man-3.jpg";
-import man4 from "./images/man-4.jpg";
-import man5 from "./images/man-5.jpg";
-import man6 from "./images/man-6.jpg";
-import man7 from "./images/man-7.jpg";
-import woman1 from "./images/woman-1.jpg";
-import woman2 from "./images/woman-2.jpg";
-import woman3 from "./images/woman-3.jpg";
-import woman4 from "./images/woman-4.jpg";
-import woman5 from "./images/woman-5.jpg";
-import woman6 from "./images/woman-6.jpg";
+import "../App.css";
+import profile from "../images/profile.png";
+import apple from "../images/apple.png";
+import orange from "../images/orange.png";
+import grape from "../images/grape.png";
+import peach from "../images/peach.png";
+import blueberry from "../images/blueberry.png";
+import man1 from "../images/man-1.jpg";
+import man2 from "../images/man-2.jpg";
+import man3 from "../images/man-3.jpg";
+import man4 from "../images/man-4.jpg";
+import man5 from "../images/man-5.jpg";
+import man6 from "../images/man-6.jpg";
+import man7 from "../images/man-7.jpg";
+import woman1 from "../images/woman-1.jpg";
+import woman2 from "../images/woman-2.jpg";
+import woman3 from "../images/woman-3.jpg";
+import woman4 from "../images/woman-4.jpg";
+import woman5 from "../images/woman-5.jpg";
+import woman6 from "../images/woman-6.jpg";
 
 const FALLBACK_CONTACTS = [
     {
@@ -123,7 +123,7 @@ const FALLBACK_CONTACTS = [
     }
 ];
 
-const App = () => {
+export default function Page4() {
     const [contacts, setContacts] = useState(FALLBACK_CONTACTS);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
@@ -139,7 +139,7 @@ const App = () => {
     }
 
     return (
-        <main className="page" data-testid="page-root">
+        <>
             {/*This section contains the title and main subtitle of this entire website*/}
             <header className="page__header">
                 <h1 className="page__title">Personal Contact List</h1>
@@ -263,8 +263,6 @@ const App = () => {
                     shine.
                 </small>
             </footer>
-        </main>
+        </>
     );
 };
-
-export default App;

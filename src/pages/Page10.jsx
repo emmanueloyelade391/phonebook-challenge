@@ -123,7 +123,7 @@ const FALLBACK_CONTACTS = [
     }
 ];
 
-export default function Page3() {
+export default function Page10() {
     const [contacts, setContacts] = useState(FALLBACK_CONTACTS);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);

@@ -23,22 +23,104 @@ import woman6 from "../images/woman-6.jpg";
 const FALLBACK_CONTACTS = [
     {
         id: 1,
-        name: "Ada Lovelace",
-        phone: "(555) 010-0101",
-        email: "ada@example.com",
+        name: "Zayn Ahmed",
+        phone: "(305) 887-2012",
+        email: "zayn.ahmed@gmail.com",
+        fruit: apple,
+        photo: man5,
+        contactName: "contact-1",
+        contactType: "contact-apple"
     },
     {
         id: 2,
-        name: "Alan Turing",
-        phone: "(555) 010-0102",
-        email: "alan@example.com",
+        name: "Ava Smith",
+        phone: "(508) 966-7694",
+        email: "ava.smith@gmail.com",
+        fruit: orange,
+        photo: woman1,
+        contactName: "contact-2",
+        contactType: "contact-orange"
     },
     {
         id: 3,
-        name: "Grace Hopper",
-        phone: "(555) 010-0103",
-        email: "grace@example.com",
+        name: "Noah Davis",
+        phone: "(472) 245-5139",
+        email: "noah.davis@gmail.com",
+        fruit: grape,
+        photo: man3,
+        contactName: "contact-3",
+        contactType: "contact-grape"
     },
+    {
+        id: 4,
+        name: "Henry Anderson",
+        phone: "(630) 674-6725",
+        email: "henry.anderson@gmail.com",
+        fruit: blueberry,
+        photo: man4,
+        contactName: "contact-4",
+        contactType: "contact-blueberry"
+    },
+    {
+        id: 5,
+        name: "Mateo Garcia",
+        phone: "(472) 473-8717",
+        email: "mateo.garcia@gmail.com",
+        fruit: peach,
+        photo: man7,
+        contactName: "contact-5",
+        contactType: "contact-peach"
+    },
+    {
+        id: 6,
+        name: "Stacy Moore",
+        phone: "(305) 202-0680",
+        email: "stacy.moore@gmail.com",
+        fruit: orange,
+        photo: woman6,
+        contactName: "contact-6",
+        contactType: "contact-orange"
+    },
+    {
+        id: 7,
+        name: "Matthew Young",
+        phone: "(447) 279-8889",
+        email: "matthew.young@gmail.com",
+        fruit: apple,
+        photo: man2,
+        contactName: "contact-7",
+        contactType: "contact-apple"
+    },
+    {
+        id: 8,
+        name: "Isabella Morgan",
+        phone: "(361) 997-4027",
+        email: "isabella.morgan@gmail.com",
+        fruit: peach,
+        photo: woman2,
+        contactName: "contact-8",
+        contactType: "contact-peach"
+    },
+    {
+        id: 9,
+        name: "Lisa Nguyen",
+        phone: "(458) 607-1315",
+        email: "lisa.nguyen@gmail.com",
+        fruit: grape,
+        photo: woman4,
+        contactName: "contact-9",
+        contactType: "contact-grape"
+    },
+    {
+        id: 10,
+        name: "Amanda White",
+        phone: "(505) 582-4018",
+        email: "amanda.white@gmail.com",
+        fruit: blueberry,
+        photo: woman5,
+        contactName: "contact-10",
+        contactType: "contact-blueberry"
+    }
 ];
 
 export default function Page1() {
@@ -57,7 +139,7 @@ export default function Page1() {
     }
 
     return (
-        <main className="page" data-testid="page-root">
+        <>
             {/*This section contains the title and main subtitle of this entire website*/}
             <header className="page__header">
                 <h1 className="page__title">Personal Contact List</h1>
@@ -96,105 +178,20 @@ export default function Page1() {
             <section className="contacts" aria-labelledby="contacts-heading">
                 <h2 id="contacts-heading">Contacts</h2>
                 <div className="contacts-container">
-                    {/*1st contact*/}
-                    <div className="contact contact-apple contact-1">
-                        <img className="fruit-top" src={apple}></img>
-                        <img className="contact-photo" src={man5} alt="Image of a brown-skinned man with gold colored eyes and a curly mustache"></img>
-                        <p><span className="underlined-text">Name</span>: Zayn Ahmed</p>
-                        <p><span className="underlined-text">Phone</span>: (305) 887-2012</p>
-                        <p><span className="underlined-text">Email</span>: zayn.ahmed@gmail.com</p>
-                        <img className="fruit-bottom" src={apple}></img>
-                    </div>
 
-                    {/*2nd contact*/}
-                    <div className="contact contact-orange contact-2">
-                        <img className="fruit-top" src={orange}></img>
-                        <img className="contact-photo" src={woman1} alt="Image of an African-American woman with calm eyes"></img>
-                        <p><span className="underlined-text">Name</span>: Ava Smith</p>
-                        <p><span className="underlined-text">Phone</span>: (508) 966-7694</p>
-                        <p><span className="underlined-text">Email</span>: ava.smith@gmail.com</p>
-                        <img className="fruit-bottom" src={orange}></img>
-                    </div>
-
-                    {/*3rd contact*/}
-                    <div className="contact contact-grape contact-3">
-                        <img className="fruit-top" src={grape}></img>
-                        <img className="contact-photo" src={man3} alt="Image of a brown-skinned with a wide smile"></img>
-                        <p><span className="underlined-text">Name</span>: Noah Davis</p>
-                        <p><span className="underlined-text">Phone</span>: (472) 245-5139</p>
-                        <p><span className="underlined-text">Email</span>: noah.davis@gmail.com</p>
-                        <img className="fruit-bottom" src={grape}></img>
-                    </div>
-                    
-                    {/*4th contact*/}
-                    <div className="contact contact-blueberry contact-4">
-                        <img className="fruit-top" src={blueberry}></img>
-                        <img className="contact-photo" src={man4} alt="Image of a caucasian man wearing glasses and smiling"></img>
-                        <p><span className="underlined-text">Name</span>: Henry Anderson</p>
-                        <p><span className="underlined-text">Phone</span>: (630) 674 6725</p>
-                        <p><span className="underlined-text">Email</span>: henry.anderson@gmail.com</p>
-                        <img className="fruit-bottom" src={blueberry}></img>
-                    </div>
-
-                    {/*5th contact*/}
-                    <div className="contact contact-peach contact-5">
-                        <img className="fruit-top" src={peach}></img>
-                        <img className="contact-photo" src={man7} alt="Image of a brown-skinned man with a small grin"></img>
-                        <p><span className="underlined-text">Name</span>: Mateo Garcia</p>
-                        <p><span className="underlined-text">Phone</span>: (472) 473-8717</p>
-                        <p><span className="underlined-text">Email</span>: mateo.garcia@gmail.com</p>
-                        <img className="fruit-bottom" src={peach}></img>
-                    </div>
-                    
-                    {/*6th contact*/}
-                    <div className="contact contact-orange contact-6">
-                        <img className="fruit-top" src={orange}></img>
-                        <img className="contact-photo" src={woman6} alt="Image of a woman with a piercing gaze wearing a hat"></img>
-                        <p><span className="underlined-text">Name</span>: Stacy Moore</p>
-                        <p><span className="underlined-text">Phone</span>: (305) 202-0680</p>
-                        <p><span className="underlined-text">Email</span>: stacy.moore@gmail.com</p>
-                        <img className="fruit-bottom" src={orange}></img>
-                    </div>
-
-                    {/*7th contact*/}
-                    <div className="contact contact-apple contact-7">
-                        <img className="fruit-top" src={apple}></img>
-                        <img className="contact-photo" src={man2} alt="Image of a caucasian man with hazel colored eyes staring blankly"></img>
-                        <p><span className="underlined-text">Name</span>: Matthew Young</p>
-                        <p><span className="underlined-text">Phone</span>: (447) 279-8889</p>
-                        <p><span className="underlined-text">Email</span>: matthew.young@gmail.com</p>
-                        <img className="fruit-bottom" src={apple}></img>
-                    </div>
-
-                    {/*8th contact*/}
-                    <div className="contact contact-peach contact-8">
-                        <img className="fruit-top" src={peach}></img>
-                        <img className="contact-photo" src={woman2} alt="Image of a woman wearing a hijab smiling to her side"></img>
-                        <p><span className="underlined-text">Name</span>: Isabella Morgan</p>
-                        <p><span className="underlined-text">Phone</span>: (361) 997-4027</p>
-                        <p><span className="underlined-text">Email</span>: isabella.morgan@gmail.com</p>
-                        <img className="fruit-bottom" src={peach}></img>
-                    </div>
-
-                    {/*9th contact*/}
-                    <div className="contact contact-grape contact-9">
-                        <img className="fruit-top" src={grape}></img>
-                        <img className="contact-photo" src={woman4} alt="Image of an asian woman with freckles smiling to her left side"></img>
-                        <p><span className="underlined-text">Name</span>: Lisa Nguyen</p>
-                        <p><span className="underlined-text">Phone</span>: (458) 607-1315</p>
-                        <p><span className="underlined-text">Email</span>: lisa.nguyen@gmail.com</p>
-                        <img className="fruit-bottom" src={grape}></img>
-                    </div>
-
-                    {/*10th contact*/}
-                    <div className="contact contact-blueberry contact-10">
-                        <img className="fruit-top" src={blueberry}></img>
-                        <img className="contact-photo" src={woman5} alt="Image of an African-American woman smiling slightly to her left side"></img>
-                        <p><span className="underlined-text">Name</span>: Amanda White</p>
-                        <p><span className="underlined-text">Phone</span>: (505) 582-4018</p>
-                        <p><span className="underlined-text">Email</span>: amanda.white@gmail.com</p>
-                        <img className="fruit-bottom" src={blueberry}></img>
-                    </div>
+                    {FALLBACK_CONTACTS.map((contact) => {
+                        return (
+                            /*Displays all 10 contact cards*/                            
+                            <div className={`contact ${contact.contactName} ${contact.contactType}`}>
+                                <img className="fruit-top" src={contact.fruit}></img>
+                                <img className="contact-photo" src={contact.photo} alt="Image of a brown-skinned man with gold colored eyes and a curly mustache"></img>
+                                <p><span className="underlined-text">Name</span>: {contact.name}</p>
+                                <p><span className="underlined-text">Phone</span>: {contact.phone}</p>
+                                <p><span className="underlined-text">Email</span>: {contact.email}</p>
+                                <img className="fruit-bottom" src={contact.fruit}></img>
+                            </div>
+                        )
+                    })}
                 </div>
             </section>
 
@@ -266,6 +263,6 @@ export default function Page1() {
                     shine.
                 </small>
             </footer>
-        </main>
+        </>
     );
 };
