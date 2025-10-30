@@ -19,6 +19,9 @@ import woman3 from "./images/woman-3.jpg";
 import woman4 from "./images/woman-4.jpg";
 import woman5 from "./images/woman-5.jpg";
 import woman6 from "./images/woman-6.jpg";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Page1 from "./pages/page1";
+import Navbar from "./Navbar";
 
 const FALLBACK_CONTACTS = [
     {
@@ -140,6 +143,15 @@ const App = () => {
 
     return (
         <main className="page" data-testid="page-root">
+            <Router>
+                <Navbar />
+                <div className="page-links">
+                    <Routes>
+                        <Route path="/page1" element={<Page1 />}></Route>
+                    </Routes>
+                </div>
+            </Router>
+
             {/*This section contains the title and main subtitle of this entire website*/}
             <header className="page__header">
                 <h1 className="page__title">Personal Contact List</h1>
