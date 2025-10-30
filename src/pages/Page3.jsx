@@ -22,26 +22,6 @@ import woman6 from "../images/woman-6.jpg";
 
 const FALLBACK_CONTACTS = [
     {
-        id: 1,
-        name: "Zayn Ahmed",
-        phone: "(305) 887-2012",
-        email: "zayn.ahmed@gmail.com",
-        fruit: apple,
-        photo: man5,
-        contactName: "contact-1",
-        contactType: "contact-apple"
-    },
-    {
-        id: 2,
-        name: "Ava Smith",
-        phone: "(508) 966-7694",
-        email: "ava.smith@gmail.com",
-        fruit: orange,
-        photo: woman1,
-        contactName: "contact-2",
-        contactType: "contact-orange"
-    },
-    {
         id: 3,
         name: "Noah Davis",
         phone: "(472) 245-5139",
@@ -50,76 +30,6 @@ const FALLBACK_CONTACTS = [
         photo: man3,
         contactName: "contact-3",
         contactType: "contact-grape"
-    },
-    {
-        id: 4,
-        name: "Henry Anderson",
-        phone: "(630) 674-6725",
-        email: "henry.anderson@gmail.com",
-        fruit: blueberry,
-        photo: man4,
-        contactName: "contact-4",
-        contactType: "contact-blueberry"
-    },
-    {
-        id: 5,
-        name: "Mateo Garcia",
-        phone: "(472) 473-8717",
-        email: "mateo.garcia@gmail.com",
-        fruit: peach,
-        photo: man7,
-        contactName: "contact-5",
-        contactType: "contact-peach"
-    },
-    {
-        id: 6,
-        name: "Stacy Moore",
-        phone: "(305) 202-0680",
-        email: "stacy.moore@gmail.com",
-        fruit: orange,
-        photo: woman6,
-        contactName: "contact-6",
-        contactType: "contact-orange"
-    },
-    {
-        id: 7,
-        name: "Matthew Young",
-        phone: "(447) 279-8889",
-        email: "matthew.young@gmail.com",
-        fruit: apple,
-        photo: man2,
-        contactName: "contact-7",
-        contactType: "contact-apple"
-    },
-    {
-        id: 8,
-        name: "Isabella Morgan",
-        phone: "(361) 997-4027",
-        email: "isabella.morgan@gmail.com",
-        fruit: peach,
-        photo: woman2,
-        contactName: "contact-8",
-        contactType: "contact-peach"
-    },
-    {
-        id: 9,
-        name: "Lisa Nguyen",
-        phone: "(458) 607-1315",
-        email: "lisa.nguyen@gmail.com",
-        fruit: grape,
-        photo: woman4,
-        contactName: "contact-9",
-        contactType: "contact-grape"
-    },
-    {
-        id: 10,
-        name: "Amanda White",
-        phone: "(505) 582-4018",
-        email: "amanda.white@gmail.com",
-        fruit: blueberry,
-        photo: woman5,
-        contactName: "contact-10",
-        contactType: "contact-blueberry"
     }
 ];
 

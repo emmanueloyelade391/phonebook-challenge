@@ -30,96 +30,6 @@ const FALLBACK_CONTACTS = [
         photo: man5,
         contactName: "contact-1",
         contactType: "contact-apple"
-    },
-    {
-        id: 2,
-        name: "Ava Smith",
-        phone: "(508) 966-7694",
-        email: "ava.smith@gmail.com",
-        fruit: orange,
-        photo: woman1,
-        contactName: "contact-2",
-        contactType: "contact-orange"
-    },
-    {
-        id: 3,
-        name: "Noah Davis",
-        phone: "(472) 245-5139",
-        email: "noah.davis@gmail.com",
-        fruit: grape,
-        photo: man3,
-        contactName: "contact-3",
-        contactType: "contact-grape"
-    },
-    {
-        id: 4,
-        name: "Henry Anderson",
-        phone: "(630) 674-6725",
-        email: "henry.anderson@gmail.com",
-        fruit: blueberry,
-        photo: man4,
-        contactName: "contact-4",
-        contactType: "contact-blueberry"
-    },
-    {
-        id: 5,
-        name: "Mateo Garcia",
-        phone: "(472) 473-8717",
-        email: "mateo.garcia@gmail.com",
-        fruit: peach,
-        photo: man7,
-        contactName: "contact-5",
-        contactType: "contact-peach"
-    },
-    {
-        id: 6,
-        name: "Stacy Moore",
-        phone: "(305) 202-0680",
-        email: "stacy.moore@gmail.com",
-        fruit: orange,
-        photo: woman6,
-        contactName: "contact-6",
-        contactType: "contact-orange"
-    },
-    {
-        id: 7,
-        name: "Matthew Young",
-        phone: "(447) 279-8889",
-        email: "matthew.young@gmail.com",
-        fruit: apple,
-        photo: man2,
-        contactName: "contact-7",
-        contactType: "contact-apple"
-    },
-    {
-        id: 8,
-        name: "Isabella Morgan",
-        phone: "(361) 997-4027",
-        email: "isabella.morgan@gmail.com",
-        fruit: peach,
-        photo: woman2,
-        contactName: "contact-8",
-        contactType: "contact-peach"
-    },
-    {
-        id: 9,
-        name: "Lisa Nguyen",
-        phone: "(458) 607-1315",
-        email: "lisa.nguyen@gmail.com",
-        fruit: grape,
-        photo: woman4,
-        contactName: "contact-9",
-        contactType: "contact-grape"
-    },
-    {
-        id: 10,
-        name: "Amanda White",
-        phone: "(505) 582-4018",
-        email: "amanda.white@gmail.com",
-        fruit: blueberry,
-        photo: woman5,
-        contactName: "contact-10",
-        contactType: "contact-blueberry"
     }
 ];
 
@@ -175,14 +85,14 @@ export default function Page1() {
 
             {/*This section contains all contact cards in order (each row has 3 cards).
             Each contact card has a unique name, email, phone number, and photo*/}
-            <section className="contacts" aria-labelledby="contacts-heading">
+            <section className="contacts page-contacts" aria-labelledby="contacts-heading">
                 <h2 id="contacts-heading">Contacts</h2>
-                <div className="contacts-container">
+                <div className="page1-contact-container">
 
                     {FALLBACK_CONTACTS.map((contact) => {
                         return (
                             /*Displays all 10 contact cards*/                            
-                            <div className={`contact ${contact.contactName} ${contact.contactType}`}>
+                            <div className={`contact page1-contact ${contact.contactName} ${contact.contactType}`}>
                                 <img className="fruit-top" src={contact.fruit}></img>
                                 <img className="contact-photo" src={contact.photo} alt="Image of a brown-skinned man with gold colored eyes and a curly mustache"></img>
                                 <p><span className="underlined-text">Name</span>: {contact.name}</p>
