@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Allpages from "./pages/Allpages";
 import Page1 from "./pages/Page1";
 import Page2 from "./pages/Page2";
 import Page3 from "./pages/Page3";
@@ -18,6 +19,7 @@ const App = () => {
                 <Navbar />
                 <div className="page-links">
                     <Routes>
+                        <Route path="/Allpages" element={<Allpages />}></Route>
                         <Route path="/Page1" element={<Page1 />}></Route>
                         <Route path="/Page2" element={<Page2 />}></Route>
                         <Route path="/Page3" element={<Page3 />}></Route>

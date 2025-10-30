@@ -4,6 +4,7 @@ export default function Navbar() {
   return (
     <nav>
       <ul className="nav-list">
+        <li><Link to="/Allpages">All Pages</Link></li>
         <li><Link to="/page1">Page 1</Link></li>
         <li><Link to="/page2">Page 2</Link></li>
         <li><Link to="/page3">Page 3</Link></li>
