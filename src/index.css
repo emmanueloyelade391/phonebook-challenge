@@ -44,7 +44,7 @@ body {
         "Segoe UI Emoji";
     color: var(--fg);
     background: var(--bg);
-    background-image: url("fruits-pattern.jpg");
+    background-image: url("./images/fruits-pattern.jpg");
     padding: 30px;
     padding-left: 50px;
     padding-right: 50px;
