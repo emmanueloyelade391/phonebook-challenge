@@ -147,6 +147,7 @@ const App = () => {
                 <Navbar />
                 <div className="page-links">
                     <Routes>
+                        <Route path="/" element={<h2>Welcome to the home page</h2>}></Route>
                         <Route path="/Page1" element={<Page1 />}></Route>
                     </Routes>
                 </div>
