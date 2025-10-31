@@ -102,10 +102,6 @@
     margin-top: 1.5rem;
 }
 
-.page-contacts {
-    margin-bottom: 95px;
-}
-
 .contacts-container {
     font-size: 20px;
     display: grid;
@@ -117,7 +113,7 @@
 .page-contact-container {
     font-size: 24px;
     width: 600px; 
-    height: 600px; 
+    height: 700px; 
     margin: 0 auto; 
     
 }
