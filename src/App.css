@@ -401,3 +401,10 @@ select {
         margin-bottom: 30px; 
     }
 }
+
+@media(max-width: 812px) {
+    .page1-contact-container {
+    width: 400px; 
+    height: 600px;
+}
+}
