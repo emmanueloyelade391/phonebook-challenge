@@ -20,6 +20,7 @@ import woman3 from "../images/woman-3.jpg";
 import woman4 from "../images/woman-4.jpg";
 import woman5 from "../images/woman-5.jpg";
 import woman6 from "../images/woman-6.jpg";
+import Pagination from "../pagination.jsx";
 
 const FALLBACK_CONTACTS = [
     {
@@ -183,7 +184,7 @@ export default function Page1() {
                     {FALLBACK_CONTACTS.map((contact) => {
                         return (
                             /*Displays all 10 contact cards*/                            
-                            <div className={`contact ${contact.contactName} ${contact.contactType}`}>
+                            <div className={`contact ${contact.contactName} ${contact.contactType}`} key={contact.id}>
                                 <img className="fruit-top" src={contact.fruit}></img>
                                 <img className="contact-photo" src={contact.photo} alt="Image of a brown-skinned man with gold colored eyes and a curly mustache"></img>
                                 <p><span className="underlined-text">Name</span>: {contact.name}</p>
@@ -194,19 +195,24 @@ export default function Page1() {
                         )
                     })}
                 </div>
-                <nav>
-                    <Link to="/Allpages">All Pages</Link> | 
-                    <Link to="/page1">Page 1</Link> |
-                    <Link to="/page2">Page 2</Link> |
-                    <Link to="/page3">Page 3</Link> |
-                    <Link to="/page4">Page 4</Link> |
-                    <Link to="/page5">Page 5</Link> |
-                    <Link to="/page6">Page 6</Link> |
-                    <Link to="/page7">Page 7</Link> |
-                    <Link to="/page8">Page 8</Link> |
-                    <Link to="/page9">Page 9</Link> |
-                    <Link to="/page10">Page 10</Link> |
+                <Pagination />
+                {/*
+                <nav className="page-nav">
+                    <Link><button className="nav-button">Previous</button></Link>
+                    <Link to="/Allpages"><button className="nav-button">All Pages</button></Link> 
+                    <Link to="/page1"><button className="nav-button">Page 1</button></Link> 
+                    <Link to="/page2"><button className="nav-button">Part 2</button></Link> 
+                    <Link to="/page3"><button className="nav-button">Part 3</button></Link> 
+                    <Link to="/page4"><button className="nav-button">Part 4</button></Link> 
+                    <Link to="/page5"><button className="nav-button">Part 5</button></Link> 
+                    <Link to="/page6"><button className="nav-button">Part 6</button></Link> 
+                    <Link to="/page7"><button className="nav-button">Part 7</button></Link> 
+                    <Link to="/page8"><button className="nav-button">Part 8</button></Link> 
+                    <Link to="/page9"><button className="nav-button">Part 9</button></Link> 
+                    <Link to="/page10"><button className="nav-button">Part 10</button></Link> 
+                    <Link><button className="nav-button">Next</button></Link>
                 </nav>
+                */}
             </section>
 
             {/*This section allows the user to add new contacts by adding a new name, phone number, and email address. 

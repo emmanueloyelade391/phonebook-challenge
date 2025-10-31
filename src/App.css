@@ -304,6 +304,29 @@
     color: #aaa;
 }
 
+.page-nav {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    margin-top: 30px; 
+}
+
+.nav-button {
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #4184ff;
+    border-radius: 5px;
+    padding: 10px 6px;
+    font-size: 18px; 
+    color: black;
+    transition: background-color 0.25s, color 0.25s;
+}
+
+.nav-button:hover {
+    background-color: #4184ff;
+    color: white;
+}
+
 .form {
     margin-top: 2rem;
     border-top: 1px solid #333;
