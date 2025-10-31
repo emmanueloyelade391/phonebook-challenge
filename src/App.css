@@ -114,7 +114,7 @@
     margin: 0 auto;
 }
 
-.page1-contact-container {
+.page-contact-container {
     font-size: 24px;
     width: 600px; 
     height: 600px; 
@@ -143,6 +143,15 @@
 }
 
 .contact-photo {
+    width: 275px;
+    height: 275px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.page-contact-photo {
     width: 330px;
     height: 330px;
     display: block;
@@ -403,7 +412,7 @@ select {
 }
 
 @media(max-width: 812px) {
-    .page1-contact-container {
+    .page-contact-container {
     width: 400px; 
     height: 600px;
 }

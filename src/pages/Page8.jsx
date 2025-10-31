@@ -85,16 +85,16 @@ export default function Page8() {
 
             {/*This section contains all contact cards in order (each row has 3 cards).
             Each contact card has a unique name, email, phone number, and photo*/}
-            <section className="contacts" aria-labelledby="contacts-heading">
+            <section className="contacts page-contacts" aria-labelledby="contacts-heading">
                 <h2 id="contacts-heading">Contacts</h2>
-                <div className="contacts-container">
+                <div className="page-contact-container">
 
                     {FALLBACK_CONTACTS.map((contact) => {
                         return (
                             /*Displays all 10 contact cards*/                            
                             <div className={`contact ${contact.contactName} ${contact.contactType}`}>
                                 <img className="fruit-top" src={contact.fruit}></img>
-                                <img className="contact-photo" src={contact.photo} alt="Image of a brown-skinned man with gold colored eyes and a curly mustache"></img>
+                                <img className="page-contact-photo" src={contact.photo} alt="Image of a brown-skinned man with gold colored eyes and a curly mustache"></img>
                                 <p><span className="underlined-text">Name</span>: {contact.name}</p>
                                 <p><span className="underlined-text">Phone</span>: {contact.phone}</p>
                                 <p><span className="underlined-text">Email</span>: {contact.email}</p>
