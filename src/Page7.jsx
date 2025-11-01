@@ -1,41 +1,42 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
-import profile from "../images/profile.png";
-import apple from "../images/apple.png";
-import orange from "../images/orange.png";
-import grape from "../images/grape.png";
-import peach from "../images/peach.png";
-import blueberry from "../images/blueberry.png";
-import man1 from "../images/man-1.jpg";
-import man2 from "../images/man-2.jpg";
-import man3 from "../images/man-3.jpg";
-import man4 from "../images/man-4.jpg";
-import man5 from "../images/man-5.jpg";
-import man6 from "../images/man-6.jpg";
-import man7 from "../images/man-7.jpg";
-import woman1 from "../images/woman-1.jpg";
-import woman2 from "../images/woman-2.jpg";
-import woman3 from "../images/woman-3.jpg";
-import woman4 from "../images/woman-4.jpg";
-import woman5 from "../images/woman-5.jpg";
-import woman6 from "../images/woman-6.jpg";
-import Pagination from "../pagination.jsx";
+import "./App.css";
+import profile from "./images/profile.png";
+import apple from "./images/apple.png";
+import orange from "./images/orange.png";
+import grape from "./images/grape.png";
+import peach from "./images/peach.png";
+import blueberry from "./images/blueberry.png";
+import man1 from "./images/man-1.jpg";
+import man2 from "./images/man-2.jpg";
+import man3 from "./images/man-3.jpg";
+import man4 from "./images/man-4.jpg";
+import man5 from "./images/man-5.jpg";
+import man6 from "./images/man-6.jpg";
+import man7 from "./images/man-7.jpg";
+import woman1 from "./images/woman-1.jpg";
+import woman2 from "./images/woman-2.jpg";
+import woman3 from "./images/woman-3.jpg";
+import woman4 from "./images/woman-4.jpg";
+import woman5 from "./images/woman-5.jpg";
+import woman6 from "./images/woman-6.jpg";
+import Pagination from "./pagination.jsx";
 
 const FALLBACK_CONTACTS = [
     {
-        id: 6,
-        name: "Stacy Moore",
-        phone: "(305) 202-0680",
-        email: "stacy.moore@gmail.com",
-        fruit: orange,
-        photo: woman6,
-        contactName: "contact-6",
-        contactType: "contact-orange"
+        id: 7,
+        name: "Matthew Young",
+        phone: "(447) 279-8889",
+        email: "matthew.young@gmail.com",
+        fruit: apple,
+
+        photo: man2,
+        contactName: "contact-7",
+        contactType: "contact-apple"
     }
 ];
 
-export default function Page6() {
+export default function Page7() {
     const [contacts, setContacts] = useState(FALLBACK_CONTACTS);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);

@@ -1,38 +1,255 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Allpages from "./pages/Allpages";
-import Page1 from "./pages/Page1";
-import Page2 from "./pages/Page2";
-import Page3 from "./pages/Page3";
-import Page4 from "./pages/Page4";
-import Page5 from "./pages/Page5";
-import Page6 from "./pages/Page6";
-import Page7 from "./pages/Page7";
-import Page8 from "./pages/Page8";
-import Page9 from "./pages/Page9";
-import Page10 from "./pages/Page10";
-import Navbar from "./Navbar";
+import { useEffect, useMemo, useState } from "react";
+import "./App.css";
+import profile from "./images/profile.png";
+import apple from "./images/apple.png";
+import orange from "./images/orange.png";
+import grape from "./images/grape.png";
+import peach from "./images/peach.png";
+import blueberry from "./images/blueberry.png";
+import man1 from "./images/man-1.jpg";
+import man2 from "./images/man-2.jpg";
+import man3 from "./images/man-3.jpg";
+import man4 from "./images/man-4.jpg";
+import man5 from "./images/man-5.jpg";
+import man6 from "./images/man-6.jpg";
+import man7 from "./images/man-7.jpg";
+import woman1 from "./images/woman-1.jpg";
+import woman2 from "./images/woman-2.jpg";
+import woman3 from "./images/woman-3.jpg";
+import woman4 from "./images/woman-4.jpg";
+import woman5 from "./images/woman-5.jpg";
+import woman6 from "./images/woman-6.jpg";
+import Pagination from "./pagination.jsx";
+
+const FALLBACK_CONTACTS = [
+    {
+        id: 1,
+        name: "Zayn Ahmed",
+        phone: "(305) 887-2012",
+        email: "zayn.ahmed@gmail.com",
+        fruit: apple,
+        photo: man5,
+        contactName: "contact-1",
+        contactType: "contact-apple"
+    },
+    {
+        id: 2,
+        name: "Ava Smith",
+        phone: "(508) 966-7694",
+        email: "ava.smith@gmail.com",
+        fruit: orange,
+        photo: woman1,
+        contactName: "contact-2",
+        contactType: "contact-orange"
+    },
+    {
+        id: 3,
+        name: "Noah Davis",
+        phone: "(472) 245-5139",
+        email: "noah.davis@gmail.com",
+        fruit: grape,
+        photo: man3,
+        contactName: "contact-3",
+        contactType: "contact-grape"
+    },
+    {
+        id: 4,
+        name: "Henry Anderson",
+        phone: "(630) 674-6725",
+        email: "henry.anderson@gmail.com",
+        fruit: blueberry,
+        photo: man4,
+        contactName: "contact-4",
+        contactType: "contact-blueberry"
+    },
+    {
+        id: 5,
+        name: "Mateo Garcia",
+        phone: "(472) 473-8717",
+        email: "mateo.garcia@gmail.com",
+        fruit: peach,
+        photo: man7,
+        contactName: "contact-5",
+        contactType: "contact-peach"
+    },
+    {
+        id: 6,
+        name: "Stacy Moore",
+        phone: "(305) 202-0680",
+        email: "stacy.moore@gmail.com",
+        fruit: orange,
+        photo: woman6,
+        contactName: "contact-6",
+        contactType: "contact-orange"
+    },
+    {
+        id: 7,
+        name: "Matthew Young",
+        phone: "(447) 279-8889",
+        email: "matthew.young@gmail.com",
+        fruit: apple,
+        photo: man2,
+        contactName: "contact-7",
+        contactType: "contact-apple"
+    },
+    {
+        id: 8,
+        name: "Isabella Morgan",
+        phone: "(361) 997-4027",
+        email: "isabella.morgan@gmail.com",
+        fruit: peach,
+        photo: woman2,
+        contactName: "contact-8",
+        contactType: "contact-peach"
+    },
+    {
+        id: 9,
+        name: "Lisa Nguyen",
+        phone: "(458) 607-1315",
+        email: "lisa.nguyen@gmail.com",
+        fruit: grape,
+        photo: woman4,
+        contactName: "contact-9",
+        contactType: "contact-grape"
+    },
+    {
+        id: 10,
+        name: "Amanda White",
+        phone: "(505) 582-4018",
+        email: "amanda.white@gmail.com",
+        fruit: blueberry,
+        photo: woman5,
+        contactName: "contact-10",
+        contactType: "contact-blueberry"
+    }
+];
 
 const App = () => {
+    const [contacts, setContacts] = useState(FALLBACK_CONTACTS);
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
+    
+    useEffect(() => {}, []);
+    
+    const [query, setQuery] = useState("");
+    
+    const [form, setForm] = useState({ name: "", phone: "", email: "" });
+    function handleSubmit(e) {
+        e.preventDefault();
+        // Add contact submission logic here
+    }
+    
+
     return (
         <main className="page" data-testid="page-root">
-            <Router>
-                <Navbar />
-                <div className="page-links">
-                    <Routes>
-                        <Route path="/Allpages" element={<Allpages />}></Route>
-                        <Route path="/Page1" element={<Page1 />}></Route>
-                        <Route path="/Page2" element={<Page2 />}></Route>
-                        <Route path="/Page3" element={<Page3 />}></Route>
-                        <Route path="/Page4" element={<Page4 />}></Route>
-                        <Route path="/Page5" element={<Page5 />}></Route>
-                        <Route path="/Page6" element={<Page6 />}></Route>
-                        <Route path="/Page7" element={<Page7 />}></Route>
-                        <Route path="/Page8" element={<Page8 />}></Route>
-                        <Route path="/Page9" element={<Page9 />}></Route>
-                        <Route path="/Page10" element={<Page10 />}></Route>
-                    </Routes>
+            {/*This section contains the title and main subtitle of this entire website*/}
+            <header className="page__header">
+                <h1 className="page__title">Personal Contact List</h1>
+                <p className="page__subtitle">An online storage for all your personal contacts</p>
+            </header>
+            
+            {/*This section lets users search for specific contacts by inputting names or numbers 
+            in the search box. At the moment it is not functional*/}
+            <section className="search" aria-labelledby="search-heading">
+                <h2 id="search-heading" className="search-heading">Search Contacts</h2>
+                <div className="search__controls">
+                    <label htmlFor="search-input" className="search-input-label">Search</label>
+                    <input
+                        className="input-element"
+                        id="search-input"
+                        type="search"
+                        placeholder="Search by name or phone"
+                        value={query}
+                        onChange={(e) => setQuery(e.target.value)}
+                        data-testid="search-input"
+                        size="23"
+                    />
                 </div>
-            </Router>
+            
+                {/*Shows how many contacts were found that match the user's inputted name or number*/}
+                <p className="search__results" data-testid="results-count">
+                    Showing {contacts.length}{" "}
+                    {contacts.length === 1 ? "result" : "results"}
+                    {loading ? " (loading...)" : ""}
+                    {error ? ` (error: ${error})` : ""}
+                    </p>
+            </section>
+            
+            {/*This section contains all contact cards in order (each row has 3 cards).
+            Each contact card has a unique name, email, phone number, and photo*/}
+            <section className="contacts" aria-labelledby="contacts-heading">
+                <h2 id="contacts-heading">Contacts</h2>
+                    <Pagination />
+            </section>
+            
+            {/*This section allows the user to add new contacts by adding a new name, phone number, and email address. 
+            It is not functional at the moment, however it is responsive to different page size*/}
+            <section className="form" aria-labelledby="form-heading">
+                <h2 id="form-heading">Add a New Contact</h2>
+                <form className="form__body" onSubmit={handleSubmit} noValidate>
+                    {/*Lets the user add the name of the new contact.*/}
+                    <div className="field">
+                        <label htmlFor="name">Name</label>
+                        <input
+                            className="input-element"
+                            id="name"
+                            name="name"
+                            value={form.name}
+                            onChange={(e) => setForm({ ...form, name: e.target.value })}
+                            required
+                            minLength={2}
+                            placeholder="e.g. Joe Schmo"
+                        />
+                    </div>
+                    {/*Lets the user add the phone number of the new contact.*/}
+                    <div className="field">
+                        <label htmlFor="phone">Phone</label>
+                        <input
+                            className="input-element"
+                            id="phone"
+                            name="phone"
+                            inputMode="tel"
+                            placeholder="(555) 555-5555"
+                            value={form.phone}
+                            onChange={(e) =>
+                                setForm({ ...form, phone: e.target.value })
+                            }
+                            required
+                        />
+                    </div>
+                    {/*Lets the user add the email of the new contact. The user must push the "Add contact" button next to the 
+                    email input to create the new contact with the information they have added.*/}
+                    <div className="email-wrapper">
+                        <div className="field">
+                            <label htmlFor="email">Email</label>
+                            <input
+                                className="input-element"
+                                id="email"
+                                name="email"
+                                type="email"
+                                value={form.email}
+                                onChange={(e) =>
+                                    setForm({ ...form, email: e.target.value })
+                                }
+                                placeholder="jschmo@gmail.com"
+                            />
+                        </div>
+                        <div className="form__actions">
+                            <button className="btn" type="submit" data-testid="btn-add">
+                                Add Contact
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            
+            {/*This footer came with the scaffolding of this project*/}
+            <footer className="page__footer">
+                <small>
+                    Starter provided. Complete tasks per README and make this page
+                    shine.
+                </small>
+            </footer>
         </main>
     );
 };

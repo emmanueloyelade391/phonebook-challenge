@@ -1,41 +1,41 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
-import profile from "../images/profile.png";
-import apple from "../images/apple.png";
-import orange from "../images/orange.png";
-import grape from "../images/grape.png";
-import peach from "../images/peach.png";
-import blueberry from "../images/blueberry.png";
-import man1 from "../images/man-1.jpg";
-import man2 from "../images/man-2.jpg";
-import man3 from "../images/man-3.jpg";
-import man4 from "../images/man-4.jpg";
-import man5 from "../images/man-5.jpg";
-import man6 from "../images/man-6.jpg";
-import man7 from "../images/man-7.jpg";
-import woman1 from "../images/woman-1.jpg";
-import woman2 from "../images/woman-2.jpg";
-import woman3 from "../images/woman-3.jpg";
-import woman4 from "../images/woman-4.jpg";
-import woman5 from "../images/woman-5.jpg";
-import woman6 from "../images/woman-6.jpg";
-import Pagination from "../pagination.jsx";
+import "./App.css";
+import profile from "./images/profile.png";
+import apple from "./images/apple.png";
+import orange from "./images/orange.png";
+import grape from "./images/grape.png";
+import peach from "./images/peach.png";
+import blueberry from "./images/blueberry.png";
+import man1 from "./images/man-1.jpg";
+import man2 from "./images/man-2.jpg";
+import man3 from "./images/man-3.jpg";
+import man4 from "./images/man-4.jpg";
+import man5 from "./images/man-5.jpg";
+import man6 from "./images/man-6.jpg";
+import man7 from "./images/man-7.jpg";
+import woman1 from "./images/woman-1.jpg";
+import woman2 from "./images/woman-2.jpg";
+import woman3 from "./images/woman-3.jpg";
+import woman4 from "./images/woman-4.jpg";
+import woman5 from "./images/woman-5.jpg";
+import woman6 from "./images/woman-6.jpg";
+import Pagination from "./pagination.jsx";
 
 const FALLBACK_CONTACTS = [
     {
-        id: 1,
-        name: "Zayn Ahmed",
-        phone: "(305) 887-2012",
-        email: "zayn.ahmed@gmail.com",
-        fruit: apple,
-        photo: man5,
-        contactName: "contact-1",
-        contactType: "contact-apple"
+        id: 5,
+        name: "Mateo Garcia",
+        phone: "(472) 473-8717",
+        email: "mateo.garcia@gmail.com",
+        fruit: peach,
+        photo: man7,
+        contactName: "contact-5",
+        contactType: "contact-peach"
     }
 ];
 
-export default function Page1() {
+export default function Page5() {
     const [contacts, setContacts] = useState(FALLBACK_CONTACTS);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
@@ -94,7 +94,7 @@ export default function Page1() {
                     {FALLBACK_CONTACTS.map((contact) => {
                         return (
                             /*Displays all 10 contact cards*/                            
-                            <div className={`contact page1-contact ${contact.contactName} ${contact.contactType}`} key={contact.id}>
+                            <div className={`contact ${contact.contactName} ${contact.contactType}`} key={contact.id}>
                                 <img className="fruit-top" src={contact.fruit}></img>
                                 <img className="page-contact-photo" src={contact.photo} alt="Image of a brown-skinned man with gold colored eyes and a curly mustache"></img>
                                 <p><span className="underlined-text">Name</span>: {contact.name}</p>

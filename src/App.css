@@ -1,10 +1,10 @@
 .page {
     max-width: 1350px;
-    min-width: 527px;
+    min-width: 600px;
     margin: 0 auto;
     margin-top: 20px;
     padding: 2rem 1rem 4rem;
-    padding-left: 87px;
+    padding-left: 50px;
     padding-right: 50px;
     background-color: white;
     border-radius: 12px; 
@@ -102,12 +102,17 @@
     margin-top: 1.5rem;
 }
 
+.current-contact {
+    text-align: center; 
+    font-size: 30px; 
+    font-weight: bold;
+}
+
 .contacts-container {
-    font-size: 20px;
-    display: grid;
-    grid-template-columns: 350px 350px 350px; 
-    gap: 60px;
-    margin: 0 auto;
+    font-size: 24px;
+    width: 600px; 
+    height: 700px; 
+    margin: 0 auto; 
 }
 
 .page-contact-container {
@@ -139,8 +144,8 @@
 }
 
 .contact-photo {
-    width: 275px;
-    height: 275px;
+    width: 330px;
+    height: 330px;
     display: block;
     margin: 0 auto;
     object-fit: cover;
@@ -306,9 +311,9 @@
 
 .page-nav {
     display: flex;
-    gap: 18px;
-    justify-content: center;
-    margin-top: 30px; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 40px;  
 }
 
 .nav-button {
@@ -316,7 +321,7 @@
     background-color: white;
     border: 2px solid #4184ff;
     border-radius: 5px;
-    padding: 10px 6px;
+    padding: 10px 10px;
     font-size: 18px; 
     color: black;
     transition: background-color 0.25s, color 0.25s;
@@ -331,6 +336,7 @@
     margin-top: 2rem;
     border-top: 1px solid #333;
     padding-top: 1rem;
+    margin-top: 120px;
 }
 
 .form__body {
@@ -417,10 +423,6 @@ select {
 }
 
 @media(max-width: 1100px) {
-    .contacts-container {
-        grid-template-columns: 400px;
-    }
-
     .form__body {
         display: block;
     }
@@ -430,9 +432,34 @@ select {
     }
 }
 
-@media(max-width: 812px) {
-    .page-contact-container {
-    width: 400px; 
-    height: 600px;
-}
+@media(max-width: 820px) {
+    .contact {
+        width: 400px;
+    }
+
+    .contact-photo {
+        width: 275px;
+        height: 275px;
+    }
+
+    .contacts-container {
+        width: 550px; 
+    }
+
+    .page {
+        padding-left: 90px;
+    }
+
+    .page-nav {
+        justify-content: left;
+        width: 400px;
+        gap: 8px;
+    }
+
+    .current-contact {
+        margin-left: 3px;
+        text-align: left; 
+        font-size: 30px; 
+        font-weight: bold;
+    }
 }

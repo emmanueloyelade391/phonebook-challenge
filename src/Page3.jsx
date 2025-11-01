@@ -1,41 +1,41 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
-import profile from "../images/profile.png";
-import apple from "../images/apple.png";
-import orange from "../images/orange.png";
-import grape from "../images/grape.png";
-import peach from "../images/peach.png";
-import blueberry from "../images/blueberry.png";
-import man1 from "../images/man-1.jpg";
-import man2 from "../images/man-2.jpg";
-import man3 from "../images/man-3.jpg";
-import man4 from "../images/man-4.jpg";
-import man5 from "../images/man-5.jpg";
-import man6 from "../images/man-6.jpg";
-import man7 from "../images/man-7.jpg";
-import woman1 from "../images/woman-1.jpg";
-import woman2 from "../images/woman-2.jpg";
-import woman3 from "../images/woman-3.jpg";
-import woman4 from "../images/woman-4.jpg";
-import woman5 from "../images/woman-5.jpg";
-import woman6 from "../images/woman-6.jpg";
-import Pagination from "../pagination.jsx";
+import "./App.css";
+import profile from "./images/profile.png";
+import apple from "./images/apple.png";
+import orange from "./images/orange.png";
+import grape from "./images/grape.png";
+import peach from "./images/peach.png";
+import blueberry from "./images/blueberry.png";
+import man1 from "./images/man-1.jpg";
+import man2 from "./images/man-2.jpg";
+import man3 from "./images/man-3.jpg";
+import man4 from "./images/man-4.jpg";
+import man5 from "./images/man-5.jpg";
+import man6 from "./images/man-6.jpg";
+import man7 from "./images/man-7.jpg";
+import woman1 from "./images/woman-1.jpg";
+import woman2 from "./images/woman-2.jpg";
+import woman3 from "./images/woman-3.jpg";
+import woman4 from "./images/woman-4.jpg";
+import woman5 from "./images/woman-5.jpg";
+import woman6 from "./images/woman-6.jpg";
+import Pagination from "./pagination.jsx";
 
 const FALLBACK_CONTACTS = [
     {
-        id: 5,
-        name: "Mateo Garcia",
-        phone: "(472) 473-8717",
-        email: "mateo.garcia@gmail.com",
-        fruit: peach,
-        photo: man7,
-        contactName: "contact-5",
-        contactType: "contact-peach"
+        id: 3,
+        name: "Noah Davis",
+        phone: "(472) 245-5139",
+        email: "noah.davis@gmail.com",
+        fruit: grape,
+        photo: man3,
+        contactName: "contact-3",
+        contactType: "contact-grape"
     }
 ];
 
-export default function Page5() {
+export default function Page3() {
     const [contacts, setContacts] = useState(FALLBACK_CONTACTS);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
