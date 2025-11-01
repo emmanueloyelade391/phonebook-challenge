@@ -462,4 +462,8 @@ select {
         font-size: 30px; 
         font-weight: bold;
     }
+
+    .form {
+        margin-top: 160px;
+    }
 }
