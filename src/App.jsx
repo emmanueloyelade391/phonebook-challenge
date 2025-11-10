@@ -125,11 +125,19 @@ const FALLBACK_CONTACTS = [
 ];
 
 const App = () => {
-    const [contacts, setContacts] = useState(FALLBACK_CONTACTS);
+    const [contacts, setContacts] = useState(null);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     
-    useEffect(() => {}, []);
+    useEffect(() => {
+        fetch("../data/contacts.json")
+            .then(res => {
+                return res.json();
+            })
+            .then(data => {
+                setContacts(data);
+            });
+    }, []);
     
     const [query, setQuery] = useState("");
     
@@ -167,12 +175,12 @@ const App = () => {
                 </div>
             
                 {/*Shows how many contacts were found that match the user's inputted name or number*/}
-                <p className="search__results" data-testid="results-count">
+                {contacts && <p className="search__results" data-testid="results-count">
                     Showing {contacts.length}{" "}
                     {contacts.length === 1 ? "result" : "results"}
                     {loading ? " (loading...)" : ""}
                     {error ? ` (error: ${error})` : ""}
-                    </p>
+                </p>}
             </section>
             
             {/*This section contains all contact cards in order (each row has 3 cards).

@@ -1,32 +1,102 @@
 [
     {
-        "id": 101,
-        "name": "Ada Lovelace",
-        "phone": "(555) 010-0101",
-        "email": "ada@example.com"
+        "id": 1,
+        "name": "Zayn Ahmed",
+        "phone": "(305) 887-2012",
+        "email": "zayn.ahmed@gmail.com",
+        "fruit": "../src/images/apple.png",
+        "photo": "../src/images/man-5.jpg",
+        "contactName": "contact-1",
+        "contactType": "contact-apple"
     },
     {
-        "id": 102,
-        "name": "Alan Turing",
-        "phone": "(555) 010-0102",
-        "email": "alan@example.com"
+        "id": 2,
+        "name": "Ava Smith",
+        "phone": "(508) 966-7694",
+        "email": "ava.smith@gmail.com",
+        "fruit": "../src/images/orange.png",
+        "photo": "../src/images/woman-1.jpg",
+        "contactName": "contact-2",
+        "contactType": "contact-orange"
     },
     {
-        "id": 103,
-        "name": "Grace Hopper",
-        "phone": "(555) 010-0103",
-        "email": "grace@example.com"
+        "id": 3,
+        "name": "Noah Davis",
+        "phone": "(472) 245-5139",
+        "email": "noah.davis@gmail.com",
+        "fruit": "../src/images/grape.png",
+        "photo": "../src/images/man-3.jpg",
+        "contactName": "contact-3",
+        "contactType": "contact-grape"
     },
     {
-        "id": 104,
-        "name": "Katherine Johnson",
-        "phone": "(555) 010-0104",
-        "email": "katherine@example.com"
+        "id": 4,
+        "name": "Henry Anderson",
+        "phone": "(630) 674-6725",
+        "email": "henry.anderson@gmail.com",
+        "fruit": "../src/images/blueberry.png",
+        "photo": "../src/images/man-4.jpg",
+        "contactName": "contact-4",
+        "contactType": "contact-blueberry"
     },
     {
-        "id": 105,
-        "name": "Donald Knuth",
-        "phone": "(555) 010-0105",
-        "email": "donald@example.com"
+        "id": 5,
+        "name": "Mateo Garcia",
+        "phone": "(472) 473-8717",
+        "email": "mateo.garcia@gmail.com",
+        "fruit": "../src/images/peach.png",
+        "photo": "../src/images/man-7.jpg",
+        "contactName": "contact-5",
+        "contactType": "contact-peach"
+    },
+    {
+        "id": 6,
+        "name": "Stacy Moore",
+        "phone": "(305) 202-0680",
+        "email": "stacy.moore@gmail.com",
+        "fruit": "../src/images/orange.png",
+        "photo": "../src/images/woman-6.jpg",
+        "contactName": "contact-6",
+        "contactType": "contact-orange"
+    },
+    {
+        "id": 7,
+        "name": "Matthew Young",
+        "phone": "(447) 279-8889",
+        "email": "matthew.young@gmail.com",
+        "fruit": "../src/images/apple.png",
+        "photo": "../src/images/man-2.jpg",
+        "contactName": "contact-7",
+        "contactType": "contact-apple"
+    },
+    {
+        "id": 8,
+        "name": "Isabella Morgan",
+        "phone": "(361) 997-4027",
+        "email": "isabella.morgan@gmail.com",
+        "fruit": "../src/images/peach.png",
+        "photo": "../src/images/woman-2.jpg",
+        "contactName": "contact-8",
+        "contactType": "contact-peach"
+    },
+    {
+        "id": 9,
+        "name": "Lisa Nguyen",
+        "phone": "(458) 607-1315",
+        "email": "lisa.nguyen@gmail.com",
+        "fruit": "../src/images/grape.png",
+        "photo": "../src/images/woman-4.jpg",
+        "contactName": "contact-9",
+        "contactType": "contact-grape"
+    },
+    {
+        "id": 10,
+        "name": "Amanda White",
+        "phone": "(505) 582-4018",
+        "email": "amanda.white@gmail.com",
+        "fruit": "../src/images/blueberry.png",
+        "photo": "../src/images/woman-5.jpg",
+        "contactName": "contact-10",
+        "contactType": "contact-blueberry"
     }
 ]
