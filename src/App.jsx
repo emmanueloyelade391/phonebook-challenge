@@ -125,14 +125,14 @@ const FALLBACK_CONTACTS = [
 ];
 
 const App = () => {
-    const [contacts, setContacts] = useState(null);
+    const [contacts, setContacts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     
     useEffect(() => {
         fetch("../data/contacts.json")
             .then(res => {
-                if (!response.ok) {
+                if (!res.ok) {
                     throw new Error("Failed to contacts.");
                 }
                 return res.json();
@@ -142,7 +142,9 @@ const App = () => {
                 setLoading(false);
             })
             .catch((err) => {
-                setError(err.message);
+                setError("Could not load contacts. Showing local data instead.");
+                setContacts(FALLBACK_CONTACTS);
+                console.log("Using fallback contacts")
                 setLoading(false);
             });
     }, []);
@@ -155,14 +157,11 @@ const App = () => {
         // Add contact submission logic here
     }
 
+    {/*
     if (loading) {
         return <p>Loading contact cards... </p>
     }    
-
-    if(error) {
-        return <p style={{ color: "red"}}>Error: {error}</p>
-    }
-
+    */}
     return (
         <main className="page" data-testid="page-root">
             {/*This section contains the title and main subtitle of this entire website*/}
