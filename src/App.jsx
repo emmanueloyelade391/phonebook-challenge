@@ -126,16 +126,24 @@ const FALLBACK_CONTACTS = [
 
 const App = () => {
     const [contacts, setContacts] = useState(null);
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     
     useEffect(() => {
         fetch("../data/contacts.json")
             .then(res => {
+                if (!response.ok) {
+                    throw new Error("Failed to contacts.");
+                }
                 return res.json();
             })
             .then(data => {
                 setContacts(data);
+                setLoading(false);
+            })
+            .catch((err) => {
+                setError(err.message);
+                setLoading(false);
             });
     }, []);
     
@@ -146,7 +154,14 @@ const App = () => {
         e.preventDefault();
         // Add contact submission logic here
     }
-    
+
+    if (loading) {
+        return <p>Loading contact cards... </p>
+    }    
+
+    if(error) {
+        return <p style={{ color: "red"}}>Error: {error}</p>
+    }
 
     return (
         <main className="page" data-testid="page-root">
