@@ -22,119 +22,116 @@ import woman6 from "./images/woman-6.jpg";
 import Pagination from "./pagination.jsx";
 
 const FALLBACK_CONTACTS = [
-    {
-        id: 1,
-        name: "Zayn Ahmed",
-        phone: "(305) 887-2012",
-        email: "zayn.ahmed@gmail.com",
-        fruit: apple,
-        photo: man5,
-        contactName: "contact-1",
-        contactType: "contact-apple"
+    { 
+        id: 1, 
+        name: "Zayn Ahmed", 
+        phone: "(305) 887-2012", 
+        email: "zayn.ahmed@gmail.com", 
+        fruit: apple, 
+        photo: man5, 
+        contactName: "contact-1", 
+        contactType: "contact-apple" 
     },
-    {
-        id: 2,
+    { 
+        id: 2, 
         name: "Ava Smith",
-        phone: "(508) 966-7694",
-        email: "ava.smith@gmail.com",
-        fruit: orange,
-        photo: woman1,
-        contactName: "contact-2",
-        contactType: "contact-orange"
+        phone: "(508) 966-7694", 
+        email: "ava.smith@gmail.com", 
+        fruit: orange, 
+        photo: woman1, 
+        contactName: "contact-2", 
+        contactType: "contact-orange" 
     },
-    {
-        id: 3,
-        name: "Noah Davis",
-        phone: "(472) 245-5139",
-        email: "noah.davis@gmail.com",
-        fruit: grape,
-        photo: man3,
-        contactName: "contact-3",
-        contactType: "contact-grape"
+    { 
+        id: 3, 
+        name: "Noah Davis", 
+        phone: "(472) 245-5139", 
+        email: "noah.davis@gmail.com", 
+        fruit: grape, 
+        photo: man3, 
+        contactName: "contact-3", 
+        contactType: "contact-grape" 
     },
-    {
-        id: 4,
-        name: "Henry Anderson",
-        phone: "(630) 674-6725",
-        email: "henry.anderson@gmail.com",
-        fruit: blueberry,
-        photo: man4,
-        contactName: "contact-4",
-        contactType: "contact-blueberry"
+    { 
+        id: 4, 
+        name: "Henry Anderson", 
+        phone: "(630) 674-6725", 
+        email: "henry.anderson@gmail.com", 
+        fruit: blueberry, 
+        photo: man4, 
+        contactName: "contact-4", 
+        contactType: "contact-blueberry" 
     },
-    {
-        id: 5,
-        name: "Mateo Garcia",
-        phone: "(472) 473-8717",
-        email: "mateo.garcia@gmail.com",
-        fruit: peach,
-        photo: man7,
-        contactName: "contact-5",
-        contactType: "contact-peach"
+    { 
+        id: 5, 
+        name: "Mateo Garcia", 
+        phone: "(472) 473-8717", 
+        email: "mateo.garcia@gmail.com", 
+        fruit: peach, 
+        photo: man7, 
+        contactName: "contact-5", 
+        contactType: "contact-peach" 
     },
-    {
-        id: 6,
-        name: "Stacy Moore",
-        phone: "(305) 202-0680",
-        email: "stacy.moore@gmail.com",
-        fruit: orange,
-        photo: woman6,
-        contactName: "contact-6",
-        contactType: "contact-orange"
+    { 
+        id: 6, 
+        name: "Stacy Moore", 
+        phone: "(305) 202-0680", 
+        email: "stacy.moore@gmail.com", 
+        fruit: orange, 
+        photo: woman6, 
+        contactName: "contact-6", 
+        contactType: "contact-orange" 
     },
-    {
-        id: 7,
-        name: "Matthew Young",
-        phone: "(447) 279-8889",
-        email: "matthew.young@gmail.com",
-        fruit: apple,
-        photo: man2,
-        contactName: "contact-7",
-        contactType: "contact-apple"
+    { 
+        id: 7, 
+        name: "Matthew Young", 
+        phone: "(447) 279-8889", 
+        email: "matthew.young@gmail.com", 
+        fruit: apple, 
+        photo: man2, 
+        contactName: "contact-7", 
+        contactType: "contact-apple" 
     },
-    {
-        id: 8,
-        name: "Isabella Morgan",
-        phone: "(361) 997-4027",
-        email: "isabella.morgan@gmail.com",
-        fruit: peach,
-        photo: woman2,
-        contactName: "contact-8",
-        contactType: "contact-peach"
+    { 
+        id: 8, 
+        name: "Isabella Morgan", 
+        phone: "(361) 997-4027", 
+        email: "isabella.morgan@gmail.com", 
+        fruit: peach, 
+        photo: woman2, 
+        contactName: "contact-8", 
+        contactType: "contact-peach" 
     },
-    {
-        id: 9,
-        name: "Lisa Nguyen",
-        phone: "(458) 607-1315",
-        email: "lisa.nguyen@gmail.com",
-        fruit: grape,
-        photo: woman4,
-        contactName: "contact-9",
-        contactType: "contact-grape"
+    { 
+        id: 9, 
+        name: "Lisa Nguyen", 
+        phone: "(458) 607-1315", 
+        email: "lisa.nguyen@gmail.com", 
+        fruit: grape, 
+        photo: woman4, 
+        contactName: "contact-9", 
+        contactType: "contact-grape" 
     },
-    {
-        id: 10,
-        name: "Amanda White",
-        phone: "(505) 582-4018",
-        email: "amanda.white@gmail.com",
-        fruit: blueberry,
-        photo: woman5,
-        contactName: "contact-10",
-        contactType: "contact-blueberry"
-    }
+    { 
+        id: 10, 
+        name: "Amanda White", 
+        phone: "(505) 582-4018", 
+        email: "amanda.white@gmail.com", 
+        fruit: blueberry, 
+        photo: woman5, 
+        contactName: "contact-10", 
+        contactType: "contact-blueberry" }
 ];
 
 const App = () => {
     const [contacts, setContacts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    
+
     useEffect(() => {
-        fetch("../data/contacts.json")
+        fetch("/data/contacts.json")
             .then(res => {
-                if (!res.ok) {
-                    throw new Error("Failed to contacts.");
-                }
+                if (!res.ok) throw new Error("Failed to fetch contacts.");
                 return res.json();
             })
             .then(data => {
@@ -144,24 +141,32 @@ const App = () => {
             .catch((err) => {
                 setError("Could not load contacts. Showing local data instead.");
                 setContacts(FALLBACK_CONTACTS);
-                console.log("Using fallback contacts")
                 setLoading(false);
             });
     }, []);
-    
+
     const [query, setQuery] = useState("");
-    
+
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 1; 
+
+    useEffect(() => {
+        setCurrentPage(1);
+    }, [query]);
+
+    const filteredContacts = useMemo(() => {
+        if (!query) return contacts;
+        return contacts.filter(c => c.name.includes(query) || c.phone.includes(query));
+    }, [contacts, query]);
+
+    const resultsCount = filteredContacts.length;
+
     const [form, setForm] = useState({ name: "", phone: "", email: "" });
     function handleSubmit(e) {
         e.preventDefault();
         // Add contact submission logic here
     }
 
-    {/*
-    if (loading) {
-        return <p>Loading contact cards... </p>
-    }    
-    */}
     return (
         <main className="page" data-testid="page-root">
             {/*This section contains the title and main subtitle of this entire website*/}
@@ -169,7 +174,7 @@ const App = () => {
                 <h1 className="page__title">Personal Contact List</h1>
                 <p className="page__subtitle">An online storage for all your personal contacts</p>
             </header>
-            
+
             {/*This section lets users search for specific contacts by inputting names or numbers 
             in the search box. At the moment it is not functional*/}
             <section className="search" aria-labelledby="search-heading">
@@ -187,10 +192,11 @@ const App = () => {
                         size="23"
                     />
                 </div>
-            
+
                 {/*Shows how many contacts were found that match the user's inputted name or number*/}
+
                 {contacts && <p className="search__results" data-testid="results-count">
-                    Showing {contacts.length}{" "}
+                    Showing {resultsCount}{" "}
                     {contacts.length === 1 ? "result" : "results"}
                     {loading ? " (loading...)" : ""}
                     {error ? ` (error: ${error})` : ""}
@@ -201,36 +207,40 @@ const App = () => {
             Each contact card has a unique name, email, phone number, and photo*/}
             <section className="contacts" aria-labelledby="contacts-heading">
                 <h2 id="contacts-heading">Contacts</h2>
-                    <Pagination />
+                <Pagination
+                  contacts={filteredContacts}
+                  itemsPerPage={itemsPerPage}
+                  currentPage={currentPage}
+                  onPageChange={(page) => setCurrentPage(page)}
+                />
             </section>
-            
+
             {/*This section allows the user to add new contacts by adding a new name, phone number, and email address. 
             It is not functional at the moment, however it is responsive to different page size*/}
             <section className="form" aria-labelledby="form-heading">
                 <h2 id="form-heading">Add a New Contact</h2>
-                <form className="form__body" onSubmit={handleSubmit} noValidate>
+                <form className="form__body" onSubmit={(e) => e.preventDefault()} noValidate>
                     {/*Lets the user add the name of the new contact.*/}
                     <div className="field">
                         <label htmlFor="name">Name</label>
-                        <input
-                            className="input-element"
-                            id="name"
-                            name="name"
+                        <input 
+                            className="input-element" 
+                            id="name" 
+                            name="name" 
                             value={form.name}
                             onChange={(e) => setForm({ ...form, name: e.target.value })}
                             required
                             minLength={2}
-                            placeholder="e.g. Joe Schmo"
-                        />
+                            placeholder="e.g. Joe Schmo" />
                     </div>
                     {/*Lets the user add the phone number of the new contact.*/}
                     <div className="field">
                         <label htmlFor="phone">Phone</label>
-                        <input
-                            className="input-element"
-                            id="phone"
-                            name="phone"
-                            inputMode="tel"
+                        <input 
+                            className="input-element" 
+                            id="phone" 
+                            name="phone" 
+                            inputMode="tel" 
                             placeholder="(555) 555-5555"
                             value={form.phone}
                             onChange={(e) =>
@@ -244,16 +254,16 @@ const App = () => {
                     <div className="email-wrapper">
                         <div className="field">
                             <label htmlFor="email">Email</label>
-                            <input
-                                className="input-element"
-                                id="email"
-                                name="email"
-                                type="email"
+                            <input 
+                                className="input-element" 
+                                id="email" 
+                                name="email" 
+                                type="email" 
+                                placeholder="jschmo@gmail.com" 
                                 value={form.email}
                                 onChange={(e) =>
                                     setForm({ ...form, email: e.target.value })
                                 }
-                                placeholder="jschmo@gmail.com"
                             />
                         </div>
                         <div className="form__actions">
@@ -264,13 +274,10 @@ const App = () => {
                     </div>
                 </form>
             </section>
-            
+
             {/*This footer came with the scaffolding of this project*/}
             <footer className="page__footer">
-                <small>
-                    Starter provided. Complete tasks per README and make this page
-                    shine.
-                </small>
+                <small>Starter provided. Complete tasks per README and make this page shine.</small>
             </footer>
         </main>
     );
