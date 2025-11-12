@@ -180,13 +180,24 @@ const App = () => {
             isValid = false;
         }
 
-        if (!form.email.trim()) {
-        errors.email = "Email is required.";
-        isValid = false;
-        } else if (!form.email.includes("@")) {
-        errors.email = "Email must contain '@'.";
-        isValid = false;
+        if (!form.phone.trim()) {
+            errors.name = "Phone is required.";
+            isValid = false;
+        } else if (form.phone.trim().length < 13) {
+            errors.name = "Full phone number is required.";
+            isValid = false;
         }
+
+        if (!form.email.trim()) {
+            errors.name = "Email is required.";
+            isValid = false;
+        } else if (form.email.trim().length < 1) {
+            errors.name = "Email is required.";
+            isValid = false;
+        } else if (!form.email.includes("@")) {
+            errors.name = "Email must contain '@'.";
+            isValid = false;
+        } 
 
         setFormErrors(errors);
         return isValid;
