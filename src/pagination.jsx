@@ -25,7 +25,6 @@ function Pagination({ contacts = [], itemsPerPage = 1, currentPage = 1, onPageCh
       {currentItems.length > 0 ? (
         currentItems.map((contact) => (
           <div key={contact.id}>
-            <p className="current-contact">Contact {contact.id}</p>
             <div className={`contact ${contact.contactName} ${contact.contactType}`}>
               <img className="fruit-top" src={contact.fruit} alt="" />
               <img className="contact-photo" src={contact.photo} alt={`${contact.name}`} />
