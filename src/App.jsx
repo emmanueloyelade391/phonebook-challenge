@@ -162,9 +162,67 @@ const App = () => {
     const resultsCount = filteredContacts.length;
 
     const [form, setForm] = useState({ name: "", phone: "", email: "" });
+    const [formErrors, setFormErrors] = useState({name: "", phone: "", email: ""});
+
+    function validateForm() {
+        let errors = {
+            name: "", 
+            phone: "",
+            email: ""
+        };
+        let isValid = true;
+
+        if (!form.name.trim()) {
+            errors.name = "Name is required.";
+            isValid = false;
+        } else if (form.name.trim().length < 2) {
+            errors.name = "Name must be at least 2 characters.";
+            isValid = false;
+        }
+
+        if (!form.email.trim()) {
+        errors.email = "Email is required.";
+        isValid = false;
+        } else if (!form.email.includes("@")) {
+        errors.email = "Email must contain '@'.";
+        isValid = false;
+        }
+
+        setFormErrors(errors);
+        return isValid;
+    }
+
     function handleSubmit(e) {
         e.preventDefault();
         // Add contact submission logic here
+
+        if (!validateForm()) return;
+
+        const newContact = {
+            id: contacts.length + 1,
+            name: form.name.trim(),
+            phone: form.phone.trim(),
+            email: form.email.trim(),
+            fruit: apple,
+            photo: profile, 
+            contactName: `contact-${contacts.length + 1}`,
+            contactType: "contact-apple",
+            className: "contact-1"
+        };
+
+        setContacts([newContact, ...contacts]);
+        
+        setForm({ 
+            name: "", 
+            phone: "", 
+            email: "" 
+        });
+        
+        setFormErrors({ 
+            name: "", 
+            phone: "", 
+            email: "" 
+        });
     }
 
     return (
@@ -219,7 +277,7 @@ const App = () => {
             It is not functional at the moment, however it is responsive to different page size*/}
             <section className="form" aria-labelledby="form-heading">
                 <h2 id="form-heading">Add a New Contact</h2>
-                <form className="form__body" onSubmit={(e) => e.preventDefault()} noValidate>
+                <form className="form__body" onSubmit={handleSubmit} noValidate>
                     {/*Lets the user add the name of the new contact.*/}
                     <div className="field">
                         <label htmlFor="name">Name</label>
@@ -232,6 +290,9 @@ const App = () => {
                             required
                             minLength={2}
                             placeholder="e.g. Joe Schmo" />
+                        {formErrors.name && (
+                            <p style={{ color: "red", fontSize:"0.9em" }}>{formErrors.name}</p>
+                        )}
                     </div>
                     {/*Lets the user add the phone number of the new contact.*/}
                     <div className="field">
